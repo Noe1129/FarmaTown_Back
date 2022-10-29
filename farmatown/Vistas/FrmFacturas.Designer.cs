@@ -50,44 +50,55 @@ namespace farmatown.Vistas
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(399, 66);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(477, 67);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(63, 13);
+            this.label2.Size = new System.Drawing.Size(82, 19);
             this.label2.TabIndex = 28;
-            this.label2.Text = "fecha hasta";
+            this.label2.Text = "Fecha hasta";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(205, 66);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(244, 67);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(66, 13);
+            this.label1.Size = new System.Drawing.Size(85, 19);
             this.label1.TabIndex = 27;
-            this.label1.Text = "fecha desde";
+            this.label1.Text = "Fecha desde";
             // 
             // dtpFechaHasta
             // 
+            this.dtpFechaHasta.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpFechaHasta.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpFechaHasta.Location = new System.Drawing.Point(402, 82);
+            this.dtpFechaHasta.Location = new System.Drawing.Point(477, 93);
+            this.dtpFechaHasta.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.dtpFechaHasta.Name = "dtpFechaHasta";
-            this.dtpFechaHasta.Size = new System.Drawing.Size(157, 20);
+            this.dtpFechaHasta.Size = new System.Drawing.Size(182, 25);
             this.dtpFechaHasta.TabIndex = 25;
             // 
             // dtpFechaDesde
             // 
+            this.dtpFechaDesde.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpFechaDesde.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpFechaDesde.Location = new System.Drawing.Point(208, 82);
+            this.dtpFechaDesde.Location = new System.Drawing.Point(245, 93);
+            this.dtpFechaDesde.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.dtpFechaDesde.Name = "dtpFechaDesde";
-            this.dtpFechaDesde.Size = new System.Drawing.Size(166, 20);
+            this.dtpFechaDesde.Size = new System.Drawing.Size(193, 25);
             this.dtpFechaDesde.TabIndex = 24;
             // 
             // btnEliminarFiltro
             // 
-            this.btnEliminarFiltro.Location = new System.Drawing.Point(743, 596);
+            this.btnEliminarFiltro.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEliminarFiltro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEliminarFiltro.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminarFiltro.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.btnEliminarFiltro.Location = new System.Drawing.Point(928, 714);
+            this.btnEliminarFiltro.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnEliminarFiltro.Name = "btnEliminarFiltro";
-            this.btnEliminarFiltro.Size = new System.Drawing.Size(103, 25);
+            this.btnEliminarFiltro.Size = new System.Drawing.Size(120, 31);
             this.btnEliminarFiltro.TabIndex = 23;
             this.btnEliminarFiltro.Text = "Eliminar Filtro";
             this.btnEliminarFiltro.UseVisualStyleBackColor = true;
@@ -95,9 +106,14 @@ namespace farmatown.Vistas
             // 
             // btnFiltrar
             // 
-            this.btnFiltrar.Location = new System.Drawing.Point(579, 82);
+            this.btnFiltrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnFiltrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFiltrar.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFiltrar.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.btnFiltrar.Location = new System.Drawing.Point(687, 93);
+            this.btnFiltrar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnFiltrar.Name = "btnFiltrar";
-            this.btnFiltrar.Size = new System.Drawing.Size(112, 20);
+            this.btnFiltrar.Size = new System.Drawing.Size(130, 32);
             this.btnFiltrar.TabIndex = 22;
             this.btnFiltrar.Text = "Filtrar";
             this.btnFiltrar.UseVisualStyleBackColor = true;
@@ -107,6 +123,7 @@ namespace farmatown.Vistas
             // 
             this.dgvConsultar.AllowUserToAddRows = false;
             this.dgvConsultar.AllowUserToDeleteRows = false;
+            this.dgvConsultar.BackgroundColor = System.Drawing.Color.White;
             this.dgvConsultar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvConsultar.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.cNroPresup,
@@ -116,22 +133,26 @@ namespace farmatown.Vistas
             this.TipoPago,
             this.ColAcciones,
             this.btnEliminar});
-            this.dgvConsultar.Location = new System.Drawing.Point(52, 108);
+            this.dgvConsultar.Location = new System.Drawing.Point(109, 131);
+            this.dgvConsultar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.dgvConsultar.Name = "dgvConsultar";
             this.dgvConsultar.ReadOnly = true;
             this.dgvConsultar.RowHeadersVisible = false;
             this.dgvConsultar.RowHeadersWidth = 62;
             this.dgvConsultar.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvConsultar.Size = new System.Drawing.Size(805, 461);
+            this.dgvConsultar.Size = new System.Drawing.Size(939, 568);
             this.dgvConsultar.TabIndex = 21;
             this.dgvConsultar.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvConsultar_CellContentClick);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(399, 26);
+            this.label3.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.label3.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(477, 11);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(64, 13);
+            this.label3.Size = new System.Drawing.Size(92, 21);
             this.label3.TabIndex = 29;
             this.label3.Text = "FACTURAS";
             // 
@@ -149,7 +170,7 @@ namespace farmatown.Vistas
             this.cFecha.MinimumWidth = 8;
             this.cFecha.Name = "cFecha";
             this.cFecha.ReadOnly = true;
-            this.cFecha.Width = 200;
+            this.cFecha.Width = 250;
             // 
             // cCliente
             // 
@@ -157,6 +178,7 @@ namespace farmatown.Vistas
             this.cCliente.MinimumWidth = 8;
             this.cCliente.Name = "cCliente";
             this.cCliente.ReadOnly = true;
+            this.cCliente.Width = 120;
             // 
             // cTotal
             // 
@@ -167,6 +189,7 @@ namespace farmatown.Vistas
             // 
             // TipoPago
             // 
+            this.TipoPago.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.TipoPago.HeaderText = "Forma de Pago";
             this.TipoPago.Name = "TipoPago";
             this.TipoPago.ReadOnly = true;
@@ -190,9 +213,10 @@ namespace farmatown.Vistas
             // 
             // FrmFacturas
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(953, 633);
+            this.BackgroundImage = global::farmatown.Properties.Resources.fondoBlanco2;
+            this.ClientSize = new System.Drawing.Size(1112, 779);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -201,6 +225,8 @@ namespace farmatown.Vistas
             this.Controls.Add(this.btnEliminarFiltro);
             this.Controls.Add(this.btnFiltrar);
             this.Controls.Add(this.dgvConsultar);
+            this.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "FrmFacturas";
             this.Text = "FrmFacturas";
             this.Load += new System.EventHandler(this.FrmFacturas_Load);

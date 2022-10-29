@@ -117,8 +117,42 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="strConnection" xml:space="preserve">
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="552" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\552.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logoFT2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logoFT2.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="String1" xml:space="preserve">
     <value>Data Source=DESKTOP-VODM8NI\SQLEXPRESS;Initial Catalog=farmatown3;Integrated Security=True</value>
+  </data>
+  <data name="fondoBlanco" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fondoBlanco.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="55" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\55.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logoFT3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logoFT3.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logoFT21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logoFT21.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fondoCeleste" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fondoCeleste.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fondoBlanco2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fondoBlanco2.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="strConnection" xml:space="preserve">
+    <value>Data Source=NOE-PC\SQLEXPRESS;Initial Catalog=farmatown;Integrated Security=True</value>
     <comment>Mi cadena de conexion</comment>
+  </data>
+  <data name="logoFT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logoFT.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logoStock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logoStock.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

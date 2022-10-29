@@ -29,6 +29,7 @@ namespace farmatown.Vistas
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmClientes));
             this.label1 = new System.Windows.Forms.Label();
             this.txtDni = new System.Windows.Forms.TextBox();
             this.btnEliminarFiltro = new System.Windows.Forms.Button();
@@ -46,24 +47,34 @@ namespace farmatown.Vistas
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(155, 85);
+            this.label1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(212, 124);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(26, 13);
+            this.label1.Size = new System.Drawing.Size(34, 19);
             this.label1.TabIndex = 32;
             this.label1.Text = "DNI";
             // 
             // txtDni
             // 
-            this.txtDni.Location = new System.Drawing.Point(186, 82);
+            this.txtDni.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDni.Location = new System.Drawing.Point(265, 118);
+            this.txtDni.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtDni.Name = "txtDni";
-            this.txtDni.Size = new System.Drawing.Size(196, 20);
+            this.txtDni.Size = new System.Drawing.Size(260, 25);
             this.txtDni.TabIndex = 31;
             // 
             // btnEliminarFiltro
             // 
-            this.btnEliminarFiltro.Location = new System.Drawing.Point(590, 538);
+            this.btnEliminarFiltro.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEliminarFiltro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEliminarFiltro.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminarFiltro.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.btnEliminarFiltro.Location = new System.Drawing.Point(787, 786);
+            this.btnEliminarFiltro.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnEliminarFiltro.Name = "btnEliminarFiltro";
-            this.btnEliminarFiltro.Size = new System.Drawing.Size(103, 35);
+            this.btnEliminarFiltro.Size = new System.Drawing.Size(137, 30);
             this.btnEliminarFiltro.TabIndex = 29;
             this.btnEliminarFiltro.Text = "Eliminar Filtro";
             this.btnEliminarFiltro.UseVisualStyleBackColor = true;
@@ -71,9 +82,14 @@ namespace farmatown.Vistas
             // 
             // btnFiltrar
             // 
-            this.btnFiltrar.Location = new System.Drawing.Point(33, 76);
+            this.btnFiltrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnFiltrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFiltrar.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFiltrar.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.btnFiltrar.Location = new System.Drawing.Point(44, 115);
+            this.btnFiltrar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnFiltrar.Name = "btnFiltrar";
-            this.btnFiltrar.Size = new System.Drawing.Size(112, 30);
+            this.btnFiltrar.Size = new System.Drawing.Size(149, 36);
             this.btnFiltrar.TabIndex = 28;
             this.btnFiltrar.Text = "Buscar cliente";
             this.btnFiltrar.UseVisualStyleBackColor = true;
@@ -83,6 +99,8 @@ namespace farmatown.Vistas
             // 
             this.dgvConsultar.AllowUserToAddRows = false;
             this.dgvConsultar.AllowUserToDeleteRows = false;
+            this.dgvConsultar.BackgroundColor = System.Drawing.Color.White;
+            this.dgvConsultar.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dgvConsultar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvConsultar.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.cNombre,
@@ -90,13 +108,15 @@ namespace farmatown.Vistas
             this.cDni,
             this.ColTelefono,
             this.ColModificar});
-            this.dgvConsultar.Location = new System.Drawing.Point(33, 112);
+            this.dgvConsultar.GridColor = System.Drawing.Color.White;
+            this.dgvConsultar.Location = new System.Drawing.Point(44, 164);
+            this.dgvConsultar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgvConsultar.Name = "dgvConsultar";
             this.dgvConsultar.ReadOnly = true;
             this.dgvConsultar.RowHeadersVisible = false;
             this.dgvConsultar.RowHeadersWidth = 62;
             this.dgvConsultar.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvConsultar.Size = new System.Drawing.Size(660, 408);
+            this.dgvConsultar.Size = new System.Drawing.Size(880, 596);
             this.dgvConsultar.TabIndex = 27;
             this.dgvConsultar.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvConsultar_CellContentClick);
             // 
@@ -143,23 +163,30 @@ namespace farmatown.Vistas
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(351, 7);
+            this.label2.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(473, 47);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(59, 13);
+            this.label2.Size = new System.Drawing.Size(83, 21);
             this.label2.TabIndex = 33;
             this.label2.Text = "CLIENTES";
             // 
             // FrmClientes
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(771, 591);
+            this.BackgroundImage = global::farmatown.Properties.Resources.fondoBlanco2;
+            this.ClientSize = new System.Drawing.Size(1028, 864);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtDni);
             this.Controls.Add(this.btnEliminarFiltro);
             this.Controls.Add(this.btnFiltrar);
             this.Controls.Add(this.dgvConsultar);
+            this.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FrmClientes";
             this.Text = "FrmClientes";
             this.Load += new System.EventHandler(this.FrmClientes_Load);

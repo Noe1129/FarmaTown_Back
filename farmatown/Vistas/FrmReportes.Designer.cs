@@ -30,7 +30,7 @@ namespace farmatown.Vistas
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource6 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.facturasObraSocialBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dataVistaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dataVista = new farmatown.DataVista();
@@ -52,19 +52,19 @@ namespace farmatown.Vistas
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.dgvArticulos = new System.Windows.Forms.DataGridView();
+            this.articulo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cantidad_vendida = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.mes = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.anio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.cboMes = new System.Windows.Forms.ComboBox();
             this.btnAceptar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.tpClientes = new System.Windows.Forms.TabPage();
             this.dgvClientes = new System.Windows.Forms.DataGridView();
-            this.label2 = new System.Windows.Forms.Label();
             this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ventas = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.articulo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cantidad_vendida = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.mes = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.anio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.facturasObraSocialBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataVistaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataVista)).BeginInit();
@@ -113,15 +113,16 @@ namespace farmatown.Vistas
             // 
             // reportViewer1
             // 
+            this.reportViewer1.BackgroundImage = global::farmatown.Properties.Resources.fondoBlanco2;
             this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            reportDataSource6.Name = "DataSet1";
-            reportDataSource6.Value = this.facturasObraSocialBindingSource;
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource6);
+            reportDataSource1.Name = "DataSet1";
+            reportDataSource1.Value = this.facturasObraSocialBindingSource;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "farmatown.Reporte.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(3, 3);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.ServerReport.BearerToken = null;
-            this.reportViewer1.Size = new System.Drawing.Size(797, 482);
+            this.reportViewer1.Size = new System.Drawing.Size(797, 476);
             this.reportViewer1.TabIndex = 4;
             this.reportViewer1.Load += new System.EventHandler(this.reportViewer1_Load);
             // 
@@ -178,6 +179,7 @@ namespace farmatown.Vistas
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tpClientes);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControl1.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -187,10 +189,10 @@ namespace farmatown.Vistas
             // tabPage1
             // 
             this.tabPage1.Controls.Add(this.reportViewer1);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Location = new System.Drawing.Point(4, 28);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(803, 488);
+            this.tabPage1.Size = new System.Drawing.Size(803, 482);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Ventas según Obra Social";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -224,6 +226,30 @@ namespace farmatown.Vistas
             this.dgvArticulos.Size = new System.Drawing.Size(445, 228);
             this.dgvArticulos.TabIndex = 2;
             // 
+            // articulo
+            // 
+            this.articulo.HeaderText = "Articulo";
+            this.articulo.Name = "articulo";
+            this.articulo.ReadOnly = true;
+            // 
+            // cantidad_vendida
+            // 
+            this.cantidad_vendida.HeaderText = "Cantidad Vendida";
+            this.cantidad_vendida.Name = "cantidad_vendida";
+            this.cantidad_vendida.ReadOnly = true;
+            // 
+            // mes
+            // 
+            this.mes.HeaderText = "Mes";
+            this.mes.Name = "mes";
+            this.mes.ReadOnly = true;
+            // 
+            // anio
+            // 
+            this.anio.HeaderText = "Año";
+            this.anio.Name = "anio";
+            this.anio.ReadOnly = true;
+            // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.cboMes);
@@ -253,7 +279,7 @@ namespace farmatown.Vistas
             "Diciembre"});
             this.cboMes.Location = new System.Drawing.Point(6, 19);
             this.cboMes.Name = "cboMes";
-            this.cboMes.Size = new System.Drawing.Size(121, 21);
+            this.cboMes.Size = new System.Drawing.Size(121, 27);
             this.cboMes.TabIndex = 0;
             // 
             // btnAceptar
@@ -303,17 +329,6 @@ namespace farmatown.Vistas
             this.dgvClientes.Size = new System.Drawing.Size(244, 166);
             this.dgvClientes.TabIndex = 6;
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(10, 5);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(295, 20);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "Reporte de clientes más frecuentes";
-            // 
             // nombre
             // 
             this.nombre.HeaderText = "Nombre";
@@ -326,29 +341,16 @@ namespace farmatown.Vistas
             this.ventas.Name = "ventas";
             this.ventas.ReadOnly = true;
             // 
-            // articulo
+            // label2
             // 
-            this.articulo.HeaderText = "Articulo";
-            this.articulo.Name = "articulo";
-            this.articulo.ReadOnly = true;
-            // 
-            // cantidad_vendida
-            // 
-            this.cantidad_vendida.HeaderText = "Cantidad Vendida";
-            this.cantidad_vendida.Name = "cantidad_vendida";
-            this.cantidad_vendida.ReadOnly = true;
-            // 
-            // mes
-            // 
-            this.mes.HeaderText = "Mes";
-            this.mes.Name = "mes";
-            this.mes.ReadOnly = true;
-            // 
-            // anio
-            // 
-            this.anio.HeaderText = "Año";
-            this.anio.Name = "anio";
-            this.anio.ReadOnly = true;
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(10, 5);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(295, 20);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "Reporte de clientes más frecuentes";
             // 
             // FrmReportes
             // 

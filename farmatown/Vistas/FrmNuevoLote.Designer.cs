@@ -35,6 +35,7 @@ namespace farmatown.Vistas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::farmatown.Properties.Resources.fondoBlanco2;
             this.ClientSize = new System.Drawing.Size(1502, 866);
             this.Name = "FrmNuevoLote";
             this.Text = "FrmNuevoLote";

@@ -94,13 +94,14 @@ namespace farmatown.Vistas
             // 
             // btnAceptar
             // 
+            this.btnAceptar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAceptar.FlatAppearance.BorderSize = 0;
             this.btnAceptar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
             this.btnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAceptar.Location = new System.Drawing.Point(918, 482);
-            this.btnAceptar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAceptar.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.btnAceptar.Location = new System.Drawing.Point(1036, 453);
             this.btnAceptar.Name = "btnAceptar";
-            this.btnAceptar.Size = new System.Drawing.Size(82, 23);
+            this.btnAceptar.Size = new System.Drawing.Size(95, 28);
             this.btnAceptar.TabIndex = 35;
             this.btnAceptar.Text = "Aceptar";
             this.btnAceptar.UseVisualStyleBackColor = true;
@@ -109,6 +110,7 @@ namespace farmatown.Vistas
             // groupBox1
             // 
             this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.groupBox1.BackgroundImage = global::farmatown.Properties.Resources.fondoCeleste;
             this.groupBox1.Controls.Add(this.cBObraSocial);
             this.groupBox1.Controls.Add(this.btnAceptar);
             this.groupBox1.Controls.Add(this.lblDescuento);
@@ -122,9 +124,12 @@ namespace farmatown.Vistas
             this.groupBox1.Controls.Add(this.dgvDetalles);
             this.groupBox1.Controls.Add(this.lblFecha);
             this.groupBox1.Controls.Add(this.lblNroFactura);
-            this.groupBox1.Location = new System.Drawing.Point(12, 248);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(65, 387);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1076, 504);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Size = new System.Drawing.Size(1216, 588);
             this.groupBox1.TabIndex = 34;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Factura";
@@ -132,61 +137,71 @@ namespace farmatown.Vistas
             // cBObraSocial
             // 
             this.cBObraSocial.AutoSize = true;
-            this.cBObraSocial.Location = new System.Drawing.Point(603, 114);
+            this.cBObraSocial.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.cBObraSocial.Location = new System.Drawing.Point(630, 140);
+            this.cBObraSocial.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cBObraSocial.Name = "cBObraSocial";
-            this.cBObraSocial.Size = new System.Drawing.Size(109, 17);
+            this.cBObraSocial.Size = new System.Drawing.Size(132, 23);
             this.cBObraSocial.TabIndex = 60;
             this.cBObraSocial.Text = "Tiene obra Social";
-            this.cBObraSocial.UseVisualStyleBackColor = true;
+            this.cBObraSocial.UseVisualStyleBackColor = false;
             // 
             // lblDescuento
             // 
             this.lblDescuento.AutoSize = true;
-            this.lblDescuento.Location = new System.Drawing.Point(744, 94);
+            this.lblDescuento.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.lblDescuento.Location = new System.Drawing.Point(823, 108);
+            this.lblDescuento.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDescuento.Name = "lblDescuento";
-            this.lblDescuento.Size = new System.Drawing.Size(62, 13);
+            this.lblDescuento.Size = new System.Drawing.Size(78, 19);
             this.lblDescuento.TabIndex = 59;
             this.lblDescuento.Text = "Descuento:";
             // 
             // txtDescuento
             // 
-            this.txtDescuento.Location = new System.Drawing.Point(747, 110);
-            this.txtDescuento.Margin = new System.Windows.Forms.Padding(2);
+            this.txtDescuento.Location = new System.Drawing.Point(825, 140);
             this.txtDescuento.Name = "txtDescuento";
-            this.txtDescuento.Size = new System.Drawing.Size(89, 20);
+            this.txtDescuento.Size = new System.Drawing.Size(103, 25);
             this.txtDescuento.TabIndex = 58;
             // 
             // nudCantidad
             // 
-            this.nudCantidad.Location = new System.Drawing.Point(458, 110);
-            this.nudCantidad.Margin = new System.Windows.Forms.Padding(2);
+            this.nudCantidad.Location = new System.Drawing.Point(487, 138);
             this.nudCantidad.Name = "nudCantidad";
-            this.nudCantidad.Size = new System.Drawing.Size(91, 20);
+            this.nudCantidad.Size = new System.Drawing.Size(106, 25);
             this.nudCantidad.TabIndex = 57;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(25, 94);
+            this.label10.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.label10.Location = new System.Drawing.Point(31, 108);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(42, 13);
+            this.label10.Size = new System.Drawing.Size(60, 19);
             this.label10.TabIndex = 56;
-            this.label10.Text = "Articulo";
+            this.label10.Text = "Artículo:";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(455, 94);
+            this.label8.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.label8.Location = new System.Drawing.Point(486, 108);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(49, 13);
+            this.label8.Size = new System.Drawing.Size(67, 19);
             this.label8.TabIndex = 51;
-            this.label8.Text = "Cantidad";
+            this.label8.Text = "Cantidad:";
             // 
             // btnAgregarDetalle
             // 
-            this.btnAgregarDetalle.Location = new System.Drawing.Point(890, 108);
+            this.btnAgregarDetalle.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAgregarDetalle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregarDetalle.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.btnAgregarDetalle.Location = new System.Drawing.Point(1020, 135);
+            this.btnAgregarDetalle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAgregarDetalle.Name = "btnAgregarDetalle";
-            this.btnAgregarDetalle.Size = new System.Drawing.Size(110, 23);
+            this.btnAgregarDetalle.Size = new System.Drawing.Size(111, 28);
             this.btnAgregarDetalle.TabIndex = 53;
             this.btnAgregarDetalle.Text = "Agregar";
             this.btnAgregarDetalle.UseVisualStyleBackColor = true;
@@ -195,25 +210,29 @@ namespace farmatown.Vistas
             // lblTotal
             // 
             this.lblTotal.AutoSize = true;
-            this.lblTotal.Font = new System.Drawing.Font("Arial", 7F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotal.Location = new System.Drawing.Point(936, 464);
+            this.lblTotal.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.lblTotal.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotal.Location = new System.Drawing.Point(1060, 428);
+            this.lblTotal.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTotal.Name = "lblTotal";
-            this.lblTotal.Size = new System.Drawing.Size(45, 12);
+            this.lblTotal.Size = new System.Drawing.Size(67, 19);
             this.lblTotal.TabIndex = 47;
             this.lblTotal.Text = "Total $ 0";
             // 
             // cboArticulos
             // 
             this.cboArticulos.FormattingEnabled = true;
-            this.cboArticulos.Location = new System.Drawing.Point(28, 110);
+            this.cboArticulos.Location = new System.Drawing.Point(32, 137);
+            this.cboArticulos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cboArticulos.Name = "cboArticulos";
-            this.cboArticulos.Size = new System.Drawing.Size(354, 21);
+            this.cboArticulos.Size = new System.Drawing.Size(413, 27);
             this.cboArticulos.TabIndex = 49;
             // 
             // dgvDetalles
             // 
             this.dgvDetalles.AllowUserToAddRows = false;
             this.dgvDetalles.AllowUserToDeleteRows = false;
+            this.dgvDetalles.BackgroundColor = System.Drawing.Color.White;
             this.dgvDetalles.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDetalles.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Id,
@@ -228,37 +247,42 @@ namespace farmatown.Vistas
             this.colDescuento,
             this.ColTotal,
             this.ColBorrar});
-            this.dgvDetalles.Location = new System.Drawing.Point(28, 148);
+            this.dgvDetalles.Location = new System.Drawing.Point(33, 180);
+            this.dgvDetalles.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgvDetalles.Name = "dgvDetalles";
             this.dgvDetalles.ReadOnly = true;
             this.dgvDetalles.RowHeadersVisible = false;
             this.dgvDetalles.RowHeadersWidth = 51;
-            this.dgvDetalles.Size = new System.Drawing.Size(1021, 297);
+            this.dgvDetalles.Size = new System.Drawing.Size(1098, 237);
             this.dgvDetalles.TabIndex = 45;
             this.dgvDetalles.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDetalles_CellContentClick);
             // 
             // lblFecha
             // 
             this.lblFecha.AutoSize = true;
-            this.lblFecha.Location = new System.Drawing.Point(915, 36);
+            this.lblFecha.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.lblFecha.Location = new System.Drawing.Point(1016, 42);
+            this.lblFecha.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblFecha.Name = "lblFecha";
-            this.lblFecha.Size = new System.Drawing.Size(43, 13);
+            this.lblFecha.Size = new System.Drawing.Size(52, 19);
             this.lblFecha.TabIndex = 33;
             this.lblFecha.Text = "Fecha: ";
             // 
             // lblNroFactura
             // 
             this.lblNroFactura.AutoSize = true;
-            this.lblNroFactura.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNroFactura.Location = new System.Drawing.Point(25, 34);
+            this.lblNroFactura.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNroFactura.Location = new System.Drawing.Point(29, 42);
+            this.lblNroFactura.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNroFactura.Name = "lblNroFactura";
-            this.lblNroFactura.Size = new System.Drawing.Size(88, 16);
+            this.lblNroFactura.Size = new System.Drawing.Size(87, 19);
             this.lblNroFactura.TabIndex = 32;
             this.lblNroFactura.Text = "Factura Nº: ";
             // 
             // groupBox2
             // 
             this.groupBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.groupBox2.BackgroundImage = global::farmatown.Properties.Resources.fondoCeleste;
             this.groupBox2.Controls.Add(this.gbTarjeta);
             this.groupBox2.Controls.Add(this.chkTarjeta);
             this.groupBox2.Controls.Add(this.txtTelefono);
@@ -269,24 +293,30 @@ namespace farmatown.Vistas
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.txtApellido);
-            this.groupBox2.Location = new System.Drawing.Point(12, -8);
+            this.groupBox2.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.Location = new System.Drawing.Point(65, 91);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(620, 234);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Size = new System.Drawing.Size(724, 288);
             this.groupBox2.TabIndex = 35;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Cliente";
             // 
             // gbTarjeta
             // 
+            this.gbTarjeta.BackgroundImage = global::farmatown.Properties.Resources.fondoCeleste;
             this.gbTarjeta.Controls.Add(this.label6);
             this.gbTarjeta.Controls.Add(this.dtpFechaVto);
             this.gbTarjeta.Controls.Add(this.label5);
             this.gbTarjeta.Controls.Add(this.txtCodigoSeguridad);
             this.gbTarjeta.Controls.Add(this.label7);
             this.gbTarjeta.Controls.Add(this.txtNroTarjeta);
-            this.gbTarjeta.Location = new System.Drawing.Point(18, 128);
+            this.gbTarjeta.Location = new System.Drawing.Point(21, 157);
+            this.gbTarjeta.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gbTarjeta.Name = "gbTarjeta";
-            this.gbTarjeta.Size = new System.Drawing.Size(586, 100);
+            this.gbTarjeta.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gbTarjeta.Size = new System.Drawing.Size(683, 124);
             this.gbTarjeta.TabIndex = 78;
             this.gbTarjeta.TabStop = false;
             this.gbTarjeta.Text = "Tarjeta";
@@ -294,150 +324,182 @@ namespace farmatown.Vistas
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(20, 60);
+            this.label6.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.label6.Location = new System.Drawing.Point(10, 73);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(58, 26);
+            this.label6.Size = new System.Drawing.Size(76, 38);
             this.label6.TabIndex = 72;
             this.label6.Text = "Código de \r\nSeguridad:";
             // 
             // dtpFechaVto
             // 
-            this.dtpFechaVto.Location = new System.Drawing.Point(359, 23);
+            this.dtpFechaVto.Location = new System.Drawing.Point(415, 31);
+            this.dtpFechaVto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dtpFechaVto.Name = "dtpFechaVto";
-            this.dtpFechaVto.Size = new System.Drawing.Size(200, 20);
+            this.dtpFechaVto.Size = new System.Drawing.Size(260, 25);
             this.dtpFechaVto.TabIndex = 77;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(271, 29);
+            this.label5.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.label5.Location = new System.Drawing.Point(316, 36);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(82, 13);
+            this.label5.Size = new System.Drawing.Size(91, 19);
             this.label5.TabIndex = 71;
-            this.label5.Text = "Fecha de venc:";
+            this.label5.Text = "Fecha de vto:";
             // 
             // txtCodigoSeguridad
             // 
-            this.txtCodigoSeguridad.Location = new System.Drawing.Point(81, 66);
+            this.txtCodigoSeguridad.Location = new System.Drawing.Point(119, 77);
+            this.txtCodigoSeguridad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtCodigoSeguridad.Name = "txtCodigoSeguridad";
-            this.txtCodigoSeguridad.Size = new System.Drawing.Size(152, 20);
+            this.txtCodigoSeguridad.Size = new System.Drawing.Size(176, 25);
             this.txtCodigoSeguridad.TabIndex = 76;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(8, 22);
+            this.label7.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.label7.Location = new System.Drawing.Point(10, 28);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(70, 13);
+            this.label7.Size = new System.Drawing.Size(92, 19);
             this.label7.TabIndex = 73;
-            this.label7.Text = "N° de Tarjeta";
+            this.label7.Text = "N° de Tarjeta:";
             // 
             // txtNroTarjeta
             // 
-            this.txtNroTarjeta.Location = new System.Drawing.Point(81, 22);
+            this.txtNroTarjeta.Location = new System.Drawing.Point(120, 28);
+            this.txtNroTarjeta.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtNroTarjeta.Name = "txtNroTarjeta";
-            this.txtNroTarjeta.Size = new System.Drawing.Size(152, 20);
+            this.txtNroTarjeta.Size = new System.Drawing.Size(176, 25);
             this.txtNroTarjeta.TabIndex = 74;
             // 
             // chkTarjeta
             // 
             this.chkTarjeta.AutoSize = true;
-            this.chkTarjeta.Location = new System.Drawing.Point(239, 105);
+            this.chkTarjeta.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.chkTarjeta.Location = new System.Drawing.Point(487, 122);
+            this.chkTarjeta.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chkTarjeta.Name = "chkTarjeta";
-            this.chkTarjeta.Size = new System.Drawing.Size(108, 17);
+            this.chkTarjeta.Size = new System.Drawing.Size(131, 23);
             this.chkTarjeta.TabIndex = 70;
             this.chkTarjeta.Text = "Pago con Tarjeta";
-            this.chkTarjeta.UseVisualStyleBackColor = true;
+            this.chkTarjeta.UseVisualStyleBackColor = false;
             this.chkTarjeta.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // txtTelefono
             // 
-            this.txtTelefono.Location = new System.Drawing.Point(399, 22);
+            this.txtTelefono.Location = new System.Drawing.Point(466, 28);
+            this.txtTelefono.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtTelefono.Name = "txtTelefono";
-            this.txtTelefono.Size = new System.Drawing.Size(152, 20);
+            this.txtTelefono.Size = new System.Drawing.Size(176, 25);
             this.txtTelefono.TabIndex = 69;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(343, 24);
+            this.label1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.label1.Location = new System.Drawing.Point(382, 31);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(52, 13);
+            this.label1.Size = new System.Drawing.Size(65, 19);
             this.label1.TabIndex = 68;
-            this.label1.Text = "Telefono:";
+            this.label1.Text = "Teléfono:";
             // 
             // txtDni
             // 
-            this.txtDni.Location = new System.Drawing.Point(123, 22);
+            this.txtDni.Location = new System.Drawing.Point(144, 28);
+            this.txtDni.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtDni.Name = "txtDni";
-            this.txtDni.Size = new System.Drawing.Size(152, 20);
+            this.txtDni.Size = new System.Drawing.Size(176, 25);
             this.txtDni.TabIndex = 67;
             // 
             // lblDni
             // 
             this.lblDni.AutoSize = true;
-            this.lblDni.Location = new System.Drawing.Point(73, 24);
+            this.lblDni.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.lblDni.Location = new System.Drawing.Point(85, 29);
+            this.lblDni.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDni.Name = "lblDni";
-            this.lblDni.Size = new System.Drawing.Size(29, 13);
+            this.lblDni.Size = new System.Drawing.Size(37, 19);
             this.lblDni.TabIndex = 66;
             this.lblDni.Text = "DNI:";
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(123, 67);
+            this.txtNombre.Location = new System.Drawing.Point(144, 83);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(152, 20);
+            this.txtNombre.Size = new System.Drawing.Size(176, 25);
             this.txtNombre.TabIndex = 65;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(73, 70);
+            this.label3.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.label3.Location = new System.Drawing.Point(63, 86);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(47, 13);
+            this.label3.Size = new System.Drawing.Size(63, 19);
             this.label3.TabIndex = 62;
             this.label3.Text = "Nombre:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(346, 66);
+            this.label4.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.label4.Location = new System.Drawing.Point(388, 83);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(47, 13);
+            this.label4.Size = new System.Drawing.Size(61, 19);
             this.label4.TabIndex = 63;
             this.label4.Text = "Apellido:";
             // 
             // txtApellido
             // 
-            this.txtApellido.Location = new System.Drawing.Point(399, 63);
+            this.txtApellido.Location = new System.Drawing.Point(466, 77);
+            this.txtApellido.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtApellido.Name = "txtApellido";
-            this.txtApellido.Size = new System.Drawing.Size(152, 20);
+            this.txtApellido.Size = new System.Drawing.Size(176, 25);
             this.txtApellido.TabIndex = 64;
             // 
             // label2
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(804, 31);
+            this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(964, 99);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(26, 13);
+            this.label2.Size = new System.Drawing.Size(34, 19);
             this.label2.TabIndex = 39;
             this.label2.Text = "DNI";
             // 
             // txtDniFiltro
             // 
             this.txtDniFiltro.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtDniFiltro.Location = new System.Drawing.Point(836, 24);
+            this.txtDniFiltro.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDniFiltro.Location = new System.Drawing.Point(1001, 98);
+            this.txtDniFiltro.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtDniFiltro.Name = "txtDniFiltro";
-            this.txtDniFiltro.Size = new System.Drawing.Size(196, 20);
+            this.txtDniFiltro.Size = new System.Drawing.Size(210, 25);
             this.txtDniFiltro.TabIndex = 38;
             // 
             // btnFiltrar
             // 
             this.btnFiltrar.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnFiltrar.Location = new System.Drawing.Point(679, 23);
+            this.btnFiltrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnFiltrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFiltrar.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFiltrar.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.btnFiltrar.Location = new System.Drawing.Point(818, 93);
+            this.btnFiltrar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnFiltrar.Name = "btnFiltrar";
-            this.btnFiltrar.Size = new System.Drawing.Size(112, 28);
+            this.btnFiltrar.Size = new System.Drawing.Size(123, 29);
             this.btnFiltrar.TabIndex = 37;
             this.btnFiltrar.Text = "Buscar cliente";
             this.btnFiltrar.UseVisualStyleBackColor = true;
@@ -448,6 +510,7 @@ namespace farmatown.Vistas
             this.dgvConsultar.AllowUserToAddRows = false;
             this.dgvConsultar.AllowUserToDeleteRows = false;
             this.dgvConsultar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dgvConsultar.BackgroundColor = System.Drawing.Color.White;
             this.dgvConsultar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvConsultar.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.cNombre,
@@ -457,13 +520,14 @@ namespace farmatown.Vistas
             this.NroTarjeta,
             this.CodigoSeguridad,
             this.FechaVenc});
-            this.dgvConsultar.Location = new System.Drawing.Point(679, 53);
+            this.dgvConsultar.Location = new System.Drawing.Point(818, 126);
+            this.dgvConsultar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgvConsultar.Name = "dgvConsultar";
             this.dgvConsultar.ReadOnly = true;
             this.dgvConsultar.RowHeadersVisible = false;
             this.dgvConsultar.RowHeadersWidth = 62;
             this.dgvConsultar.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvConsultar.Size = new System.Drawing.Size(461, 155);
+            this.dgvConsultar.Size = new System.Drawing.Size(463, 169);
             this.dgvConsultar.TabIndex = 36;
             this.dgvConsultar.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvConsultar_CellContentClick);
             // 
@@ -521,9 +585,14 @@ namespace farmatown.Vistas
             // btnEliminarFiltro
             // 
             this.btnEliminarFiltro.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnEliminarFiltro.Location = new System.Drawing.Point(1028, 214);
+            this.btnEliminarFiltro.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEliminarFiltro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEliminarFiltro.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminarFiltro.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.btnEliminarFiltro.Location = new System.Drawing.Point(1168, 303);
+            this.btnEliminarFiltro.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnEliminarFiltro.Name = "btnEliminarFiltro";
-            this.btnEliminarFiltro.Size = new System.Drawing.Size(112, 28);
+            this.btnEliminarFiltro.Size = new System.Drawing.Size(113, 28);
             this.btnEliminarFiltro.TabIndex = 40;
             this.btnEliminarFiltro.Text = "Eliminar Filtro";
             this.btnEliminarFiltro.UseVisualStyleBackColor = true;
@@ -578,6 +647,7 @@ namespace farmatown.Vistas
             this.nombreLab.HeaderText = "Laboratorio";
             this.nombreLab.Name = "nombreLab";
             this.nombreLab.ReadOnly = true;
+            this.nombreLab.Width = 120;
             // 
             // ColPrecio
             // 
@@ -585,7 +655,7 @@ namespace farmatown.Vistas
             this.ColPrecio.MinimumWidth = 6;
             this.ColPrecio.Name = "ColPrecio";
             this.ColPrecio.ReadOnly = true;
-            this.ColPrecio.Width = 66;
+            this.ColPrecio.Width = 70;
             // 
             // ColCantidad
             // 
@@ -603,6 +673,7 @@ namespace farmatown.Vistas
             // 
             // ColTotal
             // 
+            this.ColTotal.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.ColTotal.HeaderText = "Total";
             this.ColTotal.Name = "ColTotal";
             this.ColTotal.ReadOnly = true;
@@ -619,9 +690,10 @@ namespace farmatown.Vistas
             // 
             // FrmNuevaFactura
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1134, 749);
+            this.BackgroundImage = global::farmatown.Properties.Resources.fondoBlanco2;
+            this.ClientSize = new System.Drawing.Size(1348, 952);
             this.Controls.Add(this.btnEliminarFiltro);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtDniFiltro);
@@ -629,6 +701,8 @@ namespace farmatown.Vistas
             this.Controls.Add(this.dgvConsultar);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FrmNuevaFactura";
             this.Text = "FrmNuevaFactura";
             this.Load += new System.EventHandler(this.FrmNuevaFactura_Load);

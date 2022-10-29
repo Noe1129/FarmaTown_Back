@@ -189,5 +189,10 @@ namespace farmatown.Vistas
                 dgvConsultar.Rows.Add(table.Rows[i][0], table.Rows[i][1], table.Rows[i][2], table.Rows[i][3], table.Rows[i][4], table.Rows[i][5], table.Rows[i][6], table.Rows[i][7], table.Rows[i][8], table.Rows[i][9]);
             }
         }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

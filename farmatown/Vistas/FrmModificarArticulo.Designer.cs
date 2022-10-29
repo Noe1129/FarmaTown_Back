@@ -48,9 +48,13 @@ namespace farmatown.Vistas
             // 
             // btnCancelar
             // 
+            this.btnCancelar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelar.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelar.ForeColor = System.Drawing.SystemColors.Highlight;
             this.btnCancelar.Location = new System.Drawing.Point(204, 367);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(112, 20);
+            this.btnCancelar.Size = new System.Drawing.Size(112, 27);
             this.btnCancelar.TabIndex = 41;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
@@ -58,50 +62,62 @@ namespace farmatown.Vistas
             // 
             // txtStock
             // 
-            this.txtStock.Location = new System.Drawing.Point(291, 167);
+            this.txtStock.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtStock.Location = new System.Drawing.Point(335, 167);
             this.txtStock.Name = "txtStock";
-            this.txtStock.Size = new System.Drawing.Size(118, 20);
+            this.txtStock.Size = new System.Drawing.Size(118, 25);
             this.txtStock.TabIndex = 40;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.label4.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(268, 81);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(141, 13);
+            this.label4.Size = new System.Drawing.Size(185, 19);
             this.label4.TabIndex = 39;
             this.label4.Text = "Ingrese los datos del articulo";
             // 
             // txtPrecio
             // 
-            this.txtPrecio.Location = new System.Drawing.Point(291, 206);
+            this.txtPrecio.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPrecio.Location = new System.Drawing.Point(335, 209);
             this.txtPrecio.Name = "txtPrecio";
-            this.txtPrecio.Size = new System.Drawing.Size(118, 20);
+            this.txtPrecio.Size = new System.Drawing.Size(118, 25);
             this.txtPrecio.TabIndex = 38;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.label3.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(188, 209);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(96, 13);
+            this.label3.Size = new System.Drawing.Size(125, 19);
             this.label3.TabIndex = 37;
             this.label3.Text = "Precio por unidad: ";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(243, 170);
+            this.label2.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(262, 170);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(41, 13);
+            this.label2.Size = new System.Drawing.Size(51, 19);
             this.label2.TabIndex = 36;
             this.label2.Text = "Stock: ";
             // 
             // btnGuardar
             // 
+            this.btnGuardar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGuardar.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardar.ForeColor = System.Drawing.SystemColors.Highlight;
             this.btnGuardar.Location = new System.Drawing.Point(343, 367);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(112, 20);
+            this.btnGuardar.Size = new System.Drawing.Size(112, 27);
             this.btnGuardar.TabIndex = 35;
             this.btnGuardar.Text = "Guardar articulo";
             this.btnGuardar.UseVisualStyleBackColor = true;
@@ -109,68 +125,80 @@ namespace farmatown.Vistas
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(291, 130);
+            this.txtNombre.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombre.Location = new System.Drawing.Point(335, 130);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(118, 20);
+            this.txtNombre.Size = new System.Drawing.Size(118, 25);
             this.txtNombre.TabIndex = 34;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(237, 133);
+            this.label1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(250, 133);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(47, 13);
+            this.label1.Size = new System.Drawing.Size(63, 19);
             this.label1.TabIndex = 33;
             this.label1.Text = "Nombre:";
             // 
             // cboTipoArticulo
             // 
+            this.cboTipoArticulo.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboTipoArticulo.FormattingEnabled = true;
-            this.cboTipoArticulo.Location = new System.Drawing.Point(291, 243);
+            this.cboTipoArticulo.Location = new System.Drawing.Point(335, 243);
             this.cboTipoArticulo.Name = "cboTipoArticulo";
-            this.cboTipoArticulo.Size = new System.Drawing.Size(118, 21);
+            this.cboTipoArticulo.Size = new System.Drawing.Size(118, 27);
             this.cboTipoArticulo.TabIndex = 42;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(198, 246);
+            this.label5.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.label5.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(202, 246);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(86, 13);
+            this.label5.Size = new System.Drawing.Size(111, 19);
             this.label5.TabIndex = 43;
             this.label5.Text = "Tipo de articulo: ";
             // 
             // cboDroga
             // 
+            this.cboDroga.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboDroga.FormattingEnabled = true;
-            this.cboDroga.Location = new System.Drawing.Point(291, 281);
+            this.cboDroga.Location = new System.Drawing.Point(335, 281);
             this.cboDroga.Name = "cboDroga";
-            this.cboDroga.Size = new System.Drawing.Size(118, 21);
+            this.cboDroga.Size = new System.Drawing.Size(118, 27);
             this.cboDroga.TabIndex = 44;
             // 
             // cboLaboratorio
             // 
+            this.cboLaboratorio.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboLaboratorio.FormattingEnabled = true;
-            this.cboLaboratorio.Location = new System.Drawing.Point(291, 317);
+            this.cboLaboratorio.Location = new System.Drawing.Point(335, 317);
             this.cboLaboratorio.Name = "cboLaboratorio";
-            this.cboLaboratorio.Size = new System.Drawing.Size(118, 21);
+            this.cboLaboratorio.Size = new System.Drawing.Size(118, 27);
             this.cboLaboratorio.TabIndex = 45;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(235, 284);
+            this.label6.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.label6.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(263, 281);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(39, 13);
+            this.label6.Size = new System.Drawing.Size(50, 19);
             this.label6.TabIndex = 46;
             this.label6.Text = "Droga:";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(211, 320);
+            this.label7.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.label7.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(230, 317);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(63, 13);
+            this.label7.Size = new System.Drawing.Size(83, 19);
             this.label7.TabIndex = 47;
             this.label7.Text = "Laboratorio:";
             // 
@@ -178,6 +206,7 @@ namespace farmatown.Vistas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::farmatown.Properties.Resources.fondoBlanco2;
             this.ClientSize = new System.Drawing.Size(678, 414);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);

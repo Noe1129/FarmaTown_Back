@@ -179,6 +179,9 @@
       <DependentUpon>FrmReportes.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Reporte.rdlc" />
+    <EmbeddedResource Include="Vistas\FrmInformacion.resx">
+      <DependentUpon>FrmInformacion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vistas\FrmLotes.resx">
       <DependentUpon>FrmLotes.cs</DependentUpon>
     </EmbeddedResource>
@@ -265,6 +268,17 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\fondoBlanco.jpg" />
+    <None Include="Resources\fondo4.jpg" />
+    <None Include="Resources\fondoCeleste.jpeg" />
+    <None Include="Resources\logoFT.jpeg" />
+    <None Include="Resources\logoFT2.jpeg" />
+    <None Include="Resources\logoFT21.jpeg" />
+    <None Include="Resources\logoFT3.jpeg" />
+    <None Include="Resources\55.jpg" />
+    <None Include="Resources\552.jpg" />
+    <None Include="Resources\fondoBlanco2.jpeg" />
+    <None Include="Resources\logoStock.jpeg" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

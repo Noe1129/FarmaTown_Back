@@ -31,6 +31,10 @@ namespace farmatown.Vistas
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dgvConsultar = new System.Windows.Forms.DataGridView();
+            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Apellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TipoDeUsuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
             this.cboTipoUsuario = new System.Windows.Forms.ComboBox();
@@ -44,10 +48,6 @@ namespace farmatown.Vistas
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.lblNombre = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Apellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TipoDeUsuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvConsultar)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -55,7 +55,9 @@ namespace farmatown.Vistas
             // 
             // groupBox1
             // 
+            this.groupBox1.BackgroundImage = global::farmatown.Properties.Resources.fondoCeleste;
             this.groupBox1.Controls.Add(this.dgvConsultar);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(67, 41);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(788, 380);
@@ -67,6 +69,7 @@ namespace farmatown.Vistas
             // 
             this.dgvConsultar.AllowUserToAddRows = false;
             this.dgvConsultar.AllowUserToDeleteRows = false;
+            this.dgvConsultar.BackgroundColor = System.Drawing.Color.White;
             this.dgvConsultar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvConsultar.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Id,
@@ -82,137 +85,6 @@ namespace farmatown.Vistas
             this.dgvConsultar.Size = new System.Drawing.Size(755, 315);
             this.dgvConsultar.TabIndex = 22;
             this.dgvConsultar.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvConsultar_CellContentClick);
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Controls.Add(this.cboTipoUsuario);
-            this.groupBox2.Controls.Add(this.btnRegistrar);
-            this.groupBox2.Controls.Add(this.txtApellido);
-            this.groupBox2.Controls.Add(this.txtContraseña);
-            this.groupBox2.Controls.Add(this.lblContrasenia);
-            this.groupBox2.Controls.Add(this.txtNombre);
-            this.groupBox2.Controls.Add(this.lblApellido);
-            this.groupBox2.Controls.Add(this.lblUsuario);
-            this.groupBox2.Controls.Add(this.txtUsuario);
-            this.groupBox2.Controls.Add(this.lblNombre);
-            this.groupBox2.Location = new System.Drawing.Point(290, 447);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(398, 311);
-            this.groupBox2.TabIndex = 14;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Nuevo usuario";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(44, 211);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(114, 18);
-            this.label2.TabIndex = 22;
-            this.label2.Text = "Tipo de usuario:";
-            // 
-            // cboTipoUsuario
-            // 
-            this.cboTipoUsuario.FormattingEnabled = true;
-            this.cboTipoUsuario.Location = new System.Drawing.Point(176, 208);
-            this.cboTipoUsuario.Name = "cboTipoUsuario";
-            this.cboTipoUsuario.Size = new System.Drawing.Size(123, 21);
-            this.cboTipoUsuario.TabIndex = 21;
-            // 
-            // btnRegistrar
-            // 
-            this.btnRegistrar.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnRegistrar.Location = new System.Drawing.Point(142, 247);
-            this.btnRegistrar.Name = "btnRegistrar";
-            this.btnRegistrar.Size = new System.Drawing.Size(121, 29);
-            this.btnRegistrar.TabIndex = 20;
-            this.btnRegistrar.Text = "Registrar";
-            this.btnRegistrar.UseVisualStyleBackColor = true;
-            this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
-            // 
-            // txtApellido
-            // 
-            this.txtApellido.Location = new System.Drawing.Point(176, 168);
-            this.txtApellido.Name = "txtApellido";
-            this.txtApellido.Size = new System.Drawing.Size(122, 20);
-            this.txtApellido.TabIndex = 16;
-            // 
-            // txtContraseña
-            // 
-            this.txtContraseña.Location = new System.Drawing.Point(177, 89);
-            this.txtContraseña.Name = "txtContraseña";
-            this.txtContraseña.Size = new System.Drawing.Size(122, 20);
-            this.txtContraseña.TabIndex = 17;
-            // 
-            // lblContrasenia
-            // 
-            this.lblContrasenia.AutoSize = true;
-            this.lblContrasenia.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblContrasenia.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblContrasenia.Location = new System.Drawing.Point(93, 170);
-            this.lblContrasenia.Name = "lblContrasenia";
-            this.lblContrasenia.Size = new System.Drawing.Size(67, 18);
-            this.lblContrasenia.TabIndex = 12;
-            this.lblContrasenia.Text = "Apellido: ";
-            // 
-            // txtNombre
-            // 
-            this.txtNombre.Location = new System.Drawing.Point(176, 129);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(122, 20);
-            this.txtNombre.TabIndex = 18;
-            // 
-            // lblApellido
-            // 
-            this.lblApellido.AutoSize = true;
-            this.lblApellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblApellido.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblApellido.Location = new System.Drawing.Point(67, 89);
-            this.lblApellido.Name = "lblApellido";
-            this.lblApellido.Size = new System.Drawing.Size(93, 18);
-            this.lblApellido.TabIndex = 13;
-            this.lblApellido.Text = "Contraseña: ";
-            // 
-            // lblUsuario
-            // 
-            this.lblUsuario.AutoSize = true;
-            this.lblUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsuario.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblUsuario.Location = new System.Drawing.Point(90, 128);
-            this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(70, 18);
-            this.lblUsuario.TabIndex = 14;
-            this.lblUsuario.Text = "Nombre: ";
-            // 
-            // txtUsuario
-            // 
-            this.txtUsuario.Location = new System.Drawing.Point(177, 49);
-            this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(122, 20);
-            this.txtUsuario.TabIndex = 19;
-            // 
-            // lblNombre
-            // 
-            this.lblNombre.AutoSize = true;
-            this.lblNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombre.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblNombre.Location = new System.Drawing.Point(90, 49);
-            this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(68, 18);
-            this.lblNombre.TabIndex = 15;
-            this.lblNombre.Text = "Usuario: ";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(444, 13);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(63, 13);
-            this.label1.TabIndex = 15;
-            this.label1.Text = "USUARIOS";
             // 
             // Id
             // 
@@ -230,7 +102,7 @@ namespace farmatown.Vistas
             this.Nombre.MinimumWidth = 8;
             this.Nombre.Name = "Nombre";
             this.Nombre.ReadOnly = true;
-            this.Nombre.Width = 69;
+            this.Nombre.Width = 85;
             // 
             // Apellido
             // 
@@ -248,10 +120,153 @@ namespace farmatown.Vistas
             this.TipoDeUsuario.ReadOnly = true;
             this.TipoDeUsuario.Width = 150;
             // 
+            // groupBox2
+            // 
+            this.groupBox2.BackgroundImage = global::farmatown.Properties.Resources.fondoCeleste;
+            this.groupBox2.Controls.Add(this.label2);
+            this.groupBox2.Controls.Add(this.cboTipoUsuario);
+            this.groupBox2.Controls.Add(this.btnRegistrar);
+            this.groupBox2.Controls.Add(this.txtApellido);
+            this.groupBox2.Controls.Add(this.txtContraseña);
+            this.groupBox2.Controls.Add(this.lblContrasenia);
+            this.groupBox2.Controls.Add(this.txtNombre);
+            this.groupBox2.Controls.Add(this.lblApellido);
+            this.groupBox2.Controls.Add(this.lblUsuario);
+            this.groupBox2.Controls.Add(this.txtUsuario);
+            this.groupBox2.Controls.Add(this.lblNombre);
+            this.groupBox2.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.Location = new System.Drawing.Point(290, 447);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(398, 311);
+            this.groupBox2.TabIndex = 14;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Nuevo usuario";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label2.Location = new System.Drawing.Point(52, 211);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(106, 19);
+            this.label2.TabIndex = 22;
+            this.label2.Text = "Tipo de usuario:";
+            // 
+            // cboTipoUsuario
+            // 
+            this.cboTipoUsuario.FormattingEnabled = true;
+            this.cboTipoUsuario.Location = new System.Drawing.Point(176, 208);
+            this.cboTipoUsuario.Name = "cboTipoUsuario";
+            this.cboTipoUsuario.Size = new System.Drawing.Size(123, 27);
+            this.cboTipoUsuario.TabIndex = 21;
+            // 
+            // btnRegistrar
+            // 
+            this.btnRegistrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRegistrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegistrar.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.btnRegistrar.Location = new System.Drawing.Point(176, 251);
+            this.btnRegistrar.Name = "btnRegistrar";
+            this.btnRegistrar.Size = new System.Drawing.Size(121, 29);
+            this.btnRegistrar.TabIndex = 20;
+            this.btnRegistrar.Text = "Registrar";
+            this.btnRegistrar.UseVisualStyleBackColor = true;
+            this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
+            // 
+            // txtApellido
+            // 
+            this.txtApellido.Location = new System.Drawing.Point(176, 168);
+            this.txtApellido.Name = "txtApellido";
+            this.txtApellido.Size = new System.Drawing.Size(122, 25);
+            this.txtApellido.TabIndex = 16;
+            // 
+            // txtContraseña
+            // 
+            this.txtContraseña.Location = new System.Drawing.Point(176, 89);
+            this.txtContraseña.Name = "txtContraseña";
+            this.txtContraseña.Size = new System.Drawing.Size(122, 25);
+            this.txtContraseña.TabIndex = 17;
+            // 
+            // lblContrasenia
+            // 
+            this.lblContrasenia.AutoSize = true;
+            this.lblContrasenia.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.lblContrasenia.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblContrasenia.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblContrasenia.Location = new System.Drawing.Point(93, 170);
+            this.lblContrasenia.Name = "lblContrasenia";
+            this.lblContrasenia.Size = new System.Drawing.Size(65, 19);
+            this.lblContrasenia.TabIndex = 12;
+            this.lblContrasenia.Text = "Apellido: ";
+            // 
+            // txtNombre
+            // 
+            this.txtNombre.Location = new System.Drawing.Point(176, 129);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(122, 25);
+            this.txtNombre.TabIndex = 18;
+            // 
+            // lblApellido
+            // 
+            this.lblApellido.AutoSize = true;
+            this.lblApellido.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.lblApellido.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblApellido.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblApellido.Location = new System.Drawing.Point(72, 89);
+            this.lblApellido.Name = "lblApellido";
+            this.lblApellido.Size = new System.Drawing.Size(86, 19);
+            this.lblApellido.TabIndex = 13;
+            this.lblApellido.Text = "Contraseña: ";
+            // 
+            // lblUsuario
+            // 
+            this.lblUsuario.AutoSize = true;
+            this.lblUsuario.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.lblUsuario.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsuario.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblUsuario.Location = new System.Drawing.Point(91, 129);
+            this.lblUsuario.Name = "lblUsuario";
+            this.lblUsuario.Size = new System.Drawing.Size(67, 19);
+            this.lblUsuario.TabIndex = 14;
+            this.lblUsuario.Text = "Nombre: ";
+            // 
+            // txtUsuario
+            // 
+            this.txtUsuario.Location = new System.Drawing.Point(176, 49);
+            this.txtUsuario.Name = "txtUsuario";
+            this.txtUsuario.Size = new System.Drawing.Size(122, 25);
+            this.txtUsuario.TabIndex = 19;
+            // 
+            // lblNombre
+            // 
+            this.lblNombre.AutoSize = true;
+            this.lblNombre.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.lblNombre.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombre.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblNombre.Location = new System.Drawing.Point(95, 49);
+            this.lblNombre.Name = "lblNombre";
+            this.lblNombre.Size = new System.Drawing.Size(63, 19);
+            this.lblNombre.TabIndex = 15;
+            this.lblNombre.Text = "Usuario: ";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(428, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(77, 19);
+            this.label1.TabIndex = 15;
+            this.label1.Text = "USUARIOS";
+            // 
             // FrmNuevoUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::farmatown.Properties.Resources.fondoBlanco2;
             this.ClientSize = new System.Drawing.Size(926, 778);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox2);
