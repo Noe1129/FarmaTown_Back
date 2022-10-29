@@ -72,9 +72,9 @@ namespace farmatown.Vistas
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.label2.BackColor = System.Drawing.Color.White;
             this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(496, 35);
+            this.label2.Location = new System.Drawing.Point(609, 23);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(98, 21);
             this.label2.TabIndex = 45;
@@ -93,7 +93,7 @@ namespace farmatown.Vistas
             this.groupBox1.Controls.Add(this.dgvConsultar);
             this.groupBox1.Cursor = System.Windows.Forms.Cursors.Default;
             this.groupBox1.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(12, 66);
+            this.groupBox1.Location = new System.Drawing.Point(125, 54);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(1054, 395);
             this.groupBox1.TabIndex = 46;
@@ -103,7 +103,7 @@ namespace farmatown.Vistas
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Location = new System.Drawing.Point(553, 29);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(50, 19);
@@ -132,7 +132,7 @@ namespace farmatown.Vistas
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(21, 29);
             this.label1.Name = "label1";
@@ -305,7 +305,7 @@ namespace farmatown.Vistas
             this.groupBox2.Controls.Add(this.txtNombre);
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(702, 485);
+            this.groupBox2.Location = new System.Drawing.Point(815, 473);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(364, 296);
             this.groupBox2.TabIndex = 47;
@@ -332,7 +332,7 @@ namespace farmatown.Vistas
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Location = new System.Drawing.Point(89, 140);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(50, 19);
@@ -342,7 +342,7 @@ namespace farmatown.Vistas
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Location = new System.Drawing.Point(56, 175);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(83, 19);
@@ -359,7 +359,7 @@ namespace farmatown.Vistas
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Location = new System.Drawing.Point(14, 78);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(125, 19);
@@ -376,7 +376,7 @@ namespace farmatown.Vistas
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Location = new System.Drawing.Point(50, 206);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(89, 19);
@@ -386,7 +386,7 @@ namespace farmatown.Vistas
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Location = new System.Drawing.Point(28, 108);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(111, 19);
@@ -425,7 +425,7 @@ namespace farmatown.Vistas
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Location = new System.Drawing.Point(72, 45);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(67, 19);
@@ -436,7 +436,7 @@ namespace farmatown.Vistas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::farmatown.Properties.Resources.fondoBlanco;
+            this.BackgroundImage = global::farmatown.Properties.Resources.fondoBlanco2;
             this.ClientSize = new System.Drawing.Size(1084, 793);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);

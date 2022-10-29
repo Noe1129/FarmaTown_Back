@@ -45,7 +45,7 @@ namespace farmatown.Vistas
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.label1.BackColor = System.Drawing.Color.White;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(157, 100);
             this.label1.Name = "label1";
@@ -78,9 +78,9 @@ namespace farmatown.Vistas
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.label2.BackColor = System.Drawing.Color.White;
             this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(149, 137);
+            this.label2.Location = new System.Drawing.Point(157, 137);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(65, 19);
             this.label2.TabIndex = 24;
@@ -97,9 +97,9 @@ namespace farmatown.Vistas
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.label3.BackColor = System.Drawing.Color.White;
             this.label3.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(149, 176);
+            this.label3.Location = new System.Drawing.Point(151, 173);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(69, 19);
             this.label3.TabIndex = 26;
@@ -116,7 +116,7 @@ namespace farmatown.Vistas
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.label4.BackColor = System.Drawing.Color.White;
             this.label4.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(188, 32);
             this.label4.Name = "label4";
@@ -141,9 +141,9 @@ namespace farmatown.Vistas
             // lbla
             // 
             this.lbla.AutoSize = true;
-            this.lbla.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.lbla.BackColor = System.Drawing.Color.White;
             this.lbla.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbla.Location = new System.Drawing.Point(172, 67);
+            this.lbla.Location = new System.Drawing.Point(181, 67);
             this.lbla.Name = "lbla";
             this.lbla.Size = new System.Drawing.Size(41, 19);
             this.lbla.TabIndex = 31;
@@ -162,6 +162,7 @@ namespace farmatown.Vistas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::farmatown.Properties.Resources.fondoBlanco2;
             this.ClientSize = new System.Drawing.Size(537, 356);
             this.Controls.Add(this.lblDni);
             this.Controls.Add(this.lbla);

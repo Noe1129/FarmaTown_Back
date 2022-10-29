@@ -58,7 +58,7 @@ namespace farmatown.Vistas
             this.groupBox1.BackgroundImage = global::farmatown.Properties.Resources.fondoCeleste;
             this.groupBox1.Controls.Add(this.dgvConsultar);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(67, 41);
+            this.groupBox1.Location = new System.Drawing.Point(278, 53);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(788, 380);
             this.groupBox1.TabIndex = 13;
@@ -96,13 +96,12 @@ namespace farmatown.Vistas
             // 
             // Nombre
             // 
-            this.Nombre.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
             this.Nombre.FillWeight = 160F;
             this.Nombre.HeaderText = "Nombre";
             this.Nombre.MinimumWidth = 8;
             this.Nombre.Name = "Nombre";
             this.Nombre.ReadOnly = true;
-            this.Nombre.Width = 85;
+            this.Nombre.Width = 200;
             // 
             // Apellido
             // 
@@ -114,11 +113,11 @@ namespace farmatown.Vistas
             // 
             // TipoDeUsuario
             // 
+            this.TipoDeUsuario.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.TipoDeUsuario.HeaderText = "Tipo de usuario";
             this.TipoDeUsuario.MinimumWidth = 8;
             this.TipoDeUsuario.Name = "TipoDeUsuario";
             this.TipoDeUsuario.ReadOnly = true;
-            this.TipoDeUsuario.Width = 150;
             // 
             // groupBox2
             // 
@@ -135,7 +134,7 @@ namespace farmatown.Vistas
             this.groupBox2.Controls.Add(this.txtUsuario);
             this.groupBox2.Controls.Add(this.lblNombre);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(290, 447);
+            this.groupBox2.Location = new System.Drawing.Point(669, 450);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(398, 311);
             this.groupBox2.TabIndex = 14;
@@ -145,7 +144,7 @@ namespace farmatown.Vistas
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label2.Location = new System.Drawing.Point(52, 211);
@@ -159,7 +158,7 @@ namespace farmatown.Vistas
             this.cboTipoUsuario.FormattingEnabled = true;
             this.cboTipoUsuario.Location = new System.Drawing.Point(176, 208);
             this.cboTipoUsuario.Name = "cboTipoUsuario";
-            this.cboTipoUsuario.Size = new System.Drawing.Size(123, 27);
+            this.cboTipoUsuario.Size = new System.Drawing.Size(163, 27);
             this.cboTipoUsuario.TabIndex = 21;
             // 
             // btnRegistrar
@@ -167,7 +166,7 @@ namespace farmatown.Vistas
             this.btnRegistrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRegistrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegistrar.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.btnRegistrar.Location = new System.Drawing.Point(176, 251);
+            this.btnRegistrar.Location = new System.Drawing.Point(200, 243);
             this.btnRegistrar.Name = "btnRegistrar";
             this.btnRegistrar.Size = new System.Drawing.Size(121, 29);
             this.btnRegistrar.TabIndex = 20;
@@ -179,20 +178,20 @@ namespace farmatown.Vistas
             // 
             this.txtApellido.Location = new System.Drawing.Point(176, 168);
             this.txtApellido.Name = "txtApellido";
-            this.txtApellido.Size = new System.Drawing.Size(122, 25);
+            this.txtApellido.Size = new System.Drawing.Size(163, 25);
             this.txtApellido.TabIndex = 16;
             // 
             // txtContraseña
             // 
             this.txtContraseña.Location = new System.Drawing.Point(176, 89);
             this.txtContraseña.Name = "txtContraseña";
-            this.txtContraseña.Size = new System.Drawing.Size(122, 25);
+            this.txtContraseña.Size = new System.Drawing.Size(163, 25);
             this.txtContraseña.TabIndex = 17;
             // 
             // lblContrasenia
             // 
             this.lblContrasenia.AutoSize = true;
-            this.lblContrasenia.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.lblContrasenia.BackColor = System.Drawing.Color.Transparent;
             this.lblContrasenia.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblContrasenia.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblContrasenia.Location = new System.Drawing.Point(93, 170);
@@ -205,13 +204,13 @@ namespace farmatown.Vistas
             // 
             this.txtNombre.Location = new System.Drawing.Point(176, 129);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(122, 25);
+            this.txtNombre.Size = new System.Drawing.Size(163, 25);
             this.txtNombre.TabIndex = 18;
             // 
             // lblApellido
             // 
             this.lblApellido.AutoSize = true;
-            this.lblApellido.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.lblApellido.BackColor = System.Drawing.Color.Transparent;
             this.lblApellido.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblApellido.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblApellido.Location = new System.Drawing.Point(72, 89);
@@ -223,7 +222,7 @@ namespace farmatown.Vistas
             // lblUsuario
             // 
             this.lblUsuario.AutoSize = true;
-            this.lblUsuario.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.lblUsuario.BackColor = System.Drawing.Color.Transparent;
             this.lblUsuario.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUsuario.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblUsuario.Location = new System.Drawing.Point(91, 129);
@@ -236,13 +235,13 @@ namespace farmatown.Vistas
             // 
             this.txtUsuario.Location = new System.Drawing.Point(176, 49);
             this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(122, 25);
+            this.txtUsuario.Size = new System.Drawing.Size(163, 25);
             this.txtUsuario.TabIndex = 19;
             // 
             // lblNombre
             // 
             this.lblNombre.AutoSize = true;
-            this.lblNombre.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.lblNombre.BackColor = System.Drawing.Color.Transparent;
             this.lblNombre.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNombre.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblNombre.Location = new System.Drawing.Point(95, 49);
@@ -254,9 +253,9 @@ namespace farmatown.Vistas
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.label1.BackColor = System.Drawing.Color.White;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(428, 9);
+            this.label1.Location = new System.Drawing.Point(639, 21);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(77, 19);
             this.label1.TabIndex = 15;

@@ -73,7 +73,7 @@ namespace farmatown.Vistas
             this.ColTotal,
             this.Eliminar});
             this.dgvDetalles.Location = new System.Drawing.Point(20, 79);
-            this.dgvDetalles.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvDetalles.Margin = new System.Windows.Forms.Padding(4);
             this.dgvDetalles.Name = "dgvDetalles";
             this.dgvDetalles.ReadOnly = true;
             this.dgvDetalles.RowHeadersVisible = false;
@@ -96,7 +96,7 @@ namespace farmatown.Vistas
             this.ColProducto.MinimumWidth = 8;
             this.ColProducto.Name = "ColProducto";
             this.ColProducto.ReadOnly = true;
-            this.ColProducto.Width = 250;
+            this.ColProducto.Width = 300;
             // 
             // ColCantidad
             // 
@@ -104,14 +104,14 @@ namespace farmatown.Vistas
             this.ColCantidad.MinimumWidth = 8;
             this.ColCantidad.Name = "ColCantidad";
             this.ColCantidad.ReadOnly = true;
-            this.ColCantidad.Width = 120;
+            this.ColCantidad.Width = 200;
             // 
             // ColPrecio
             // 
             this.ColPrecio.HeaderText = "Precio al momento de venta";
             this.ColPrecio.Name = "ColPrecio";
             this.ColPrecio.ReadOnly = true;
-            this.ColPrecio.Width = 180;
+            this.ColPrecio.Width = 300;
             // 
             // ColMontoDescontado
             // 
@@ -119,16 +119,18 @@ namespace farmatown.Vistas
             this.ColMontoDescontado.MinimumWidth = 8;
             this.ColMontoDescontado.Name = "ColMontoDescontado";
             this.ColMontoDescontado.ReadOnly = true;
-            this.ColMontoDescontado.Width = 150;
+            this.ColMontoDescontado.Width = 200;
             // 
             // ColTotal
             // 
             this.ColTotal.HeaderText = "Total";
             this.ColTotal.Name = "ColTotal";
             this.ColTotal.ReadOnly = true;
+            this.ColTotal.Width = 200;
             // 
             // Eliminar
             // 
+            this.Eliminar.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.Eliminar.HeaderText = "Eliminar";
             this.Eliminar.Name = "Eliminar";
             this.Eliminar.ReadOnly = true;
@@ -138,7 +140,7 @@ namespace farmatown.Vistas
             // lblNroFactura
             // 
             this.lblNroFactura.AutoSize = true;
-            this.lblNroFactura.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.lblNroFactura.BackColor = System.Drawing.Color.White;
             this.lblNroFactura.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNroFactura.Location = new System.Drawing.Point(16, 31);
             this.lblNroFactura.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -157,7 +159,7 @@ namespace farmatown.Vistas
             this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.dgvDetalles);
             this.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmDetalles";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "FrmDetalles";
