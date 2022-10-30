@@ -152,13 +152,16 @@
   <data name="552" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\552.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="FondoPrincipal2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FondoPrincipal2.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="fondoBlanco2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fondoBlanco2.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="logoFT21" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logoFT21.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="FondoPrincipal2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\FondoPrincipal2.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="fondoColor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fondoColor.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

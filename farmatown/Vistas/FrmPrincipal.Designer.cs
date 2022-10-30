@@ -77,9 +77,9 @@ namespace farmatown.Vistas
             this.PanelContainer.Controls.Add(this.lblNombre);
             this.PanelContainer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PanelContainer.Location = new System.Drawing.Point(0, 0);
-            this.PanelContainer.Margin = new System.Windows.Forms.Padding(2);
+            this.PanelContainer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PanelContainer.Name = "PanelContainer";
-            this.PanelContainer.Size = new System.Drawing.Size(914, 734);
+            this.PanelContainer.Size = new System.Drawing.Size(1219, 903);
             this.PanelContainer.TabIndex = 2;
             // 
             // LateralMenu
@@ -102,9 +102,9 @@ namespace farmatown.Vistas
             this.LateralMenu.Controls.Add(this.LogoPanel);
             this.LateralMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.LateralMenu.Location = new System.Drawing.Point(0, 0);
-            this.LateralMenu.Margin = new System.Windows.Forms.Padding(2);
+            this.LateralMenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.LateralMenu.Name = "LateralMenu";
-            this.LateralMenu.Size = new System.Drawing.Size(195, 734);
+            this.LateralMenu.Size = new System.Drawing.Size(260, 903);
             this.LateralMenu.TabIndex = 3;
             // 
             // subMenuLotes
@@ -112,10 +112,10 @@ namespace farmatown.Vistas
             this.subMenuLotes.BackColor = System.Drawing.Color.White;
             this.subMenuLotes.Controls.Add(this.btnVerLotes);
             this.subMenuLotes.Controls.Add(this.btnNuevoLote);
-            this.subMenuLotes.Location = new System.Drawing.Point(2, 292);
-            this.subMenuLotes.Margin = new System.Windows.Forms.Padding(2);
+            this.subMenuLotes.Location = new System.Drawing.Point(3, 359);
+            this.subMenuLotes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.subMenuLotes.Name = "subMenuLotes";
-            this.subMenuLotes.Size = new System.Drawing.Size(191, 66);
+            this.subMenuLotes.Size = new System.Drawing.Size(255, 81);
             this.subMenuLotes.TabIndex = 5;
             // 
             // btnVerLotes
@@ -128,11 +128,11 @@ namespace farmatown.Vistas
             this.btnVerLotes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVerLotes.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVerLotes.ForeColor = System.Drawing.Color.DimGray;
-            this.btnVerLotes.Location = new System.Drawing.Point(0, 30);
-            this.btnVerLotes.Margin = new System.Windows.Forms.Padding(2);
+            this.btnVerLotes.Location = new System.Drawing.Point(0, 37);
+            this.btnVerLotes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnVerLotes.Name = "btnVerLotes";
-            this.btnVerLotes.Padding = new System.Windows.Forms.Padding(23, 0, 0, 0);
-            this.btnVerLotes.Size = new System.Drawing.Size(191, 30);
+            this.btnVerLotes.Padding = new System.Windows.Forms.Padding(31, 0, 0, 0);
+            this.btnVerLotes.Size = new System.Drawing.Size(255, 37);
             this.btnVerLotes.TabIndex = 1;
             this.btnVerLotes.Text = "Ver lotes";
             this.btnVerLotes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -150,10 +150,10 @@ namespace farmatown.Vistas
             this.btnNuevoLote.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNuevoLote.ForeColor = System.Drawing.Color.DimGray;
             this.btnNuevoLote.Location = new System.Drawing.Point(0, 0);
-            this.btnNuevoLote.Margin = new System.Windows.Forms.Padding(2);
+            this.btnNuevoLote.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnNuevoLote.Name = "btnNuevoLote";
-            this.btnNuevoLote.Padding = new System.Windows.Forms.Padding(23, 0, 0, 0);
-            this.btnNuevoLote.Size = new System.Drawing.Size(191, 30);
+            this.btnNuevoLote.Padding = new System.Windows.Forms.Padding(31, 0, 0, 0);
+            this.btnNuevoLote.Size = new System.Drawing.Size(255, 37);
             this.btnNuevoLote.TabIndex = 0;
             this.btnNuevoLote.Text = "Crear lote";
             this.btnNuevoLote.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -169,11 +169,11 @@ namespace farmatown.Vistas
             this.btnLotes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLotes.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLotes.ForeColor = System.Drawing.Color.DimGray;
-            this.btnLotes.Location = new System.Drawing.Point(2, 258);
-            this.btnLotes.Margin = new System.Windows.Forms.Padding(2);
+            this.btnLotes.Location = new System.Drawing.Point(8, 318);
+            this.btnLotes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLotes.Name = "btnLotes";
-            this.btnLotes.Padding = new System.Windows.Forms.Padding(7, 0, 0, 0);
-            this.btnLotes.Size = new System.Drawing.Size(191, 30);
+            this.btnLotes.Padding = new System.Windows.Forms.Padding(9, 0, 0, 0);
+            this.btnLotes.Size = new System.Drawing.Size(255, 37);
             this.btnLotes.TabIndex = 17;
             this.btnLotes.Text = "LOTES";
             this.btnLotes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -188,11 +188,11 @@ namespace farmatown.Vistas
             this.btnUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUsuarios.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUsuarios.ForeColor = System.Drawing.Color.DimGray;
-            this.btnUsuarios.Location = new System.Drawing.Point(0, 658);
-            this.btnUsuarios.Margin = new System.Windows.Forms.Padding(2);
+            this.btnUsuarios.Location = new System.Drawing.Point(8, 810);
+            this.btnUsuarios.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnUsuarios.Name = "btnUsuarios";
-            this.btnUsuarios.Padding = new System.Windows.Forms.Padding(7, 0, 0, 0);
-            this.btnUsuarios.Size = new System.Drawing.Size(193, 30);
+            this.btnUsuarios.Padding = new System.Windows.Forms.Padding(9, 0, 0, 0);
+            this.btnUsuarios.Size = new System.Drawing.Size(257, 37);
             this.btnUsuarios.TabIndex = 16;
             this.btnUsuarios.Text = "USUARIOS";
             this.btnUsuarios.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -203,10 +203,10 @@ namespace farmatown.Vistas
             // 
             this.subMenuUsuarios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
             this.subMenuUsuarios.Controls.Add(this.btnAltaUsuario);
-            this.subMenuUsuarios.Location = new System.Drawing.Point(2, 690);
-            this.subMenuUsuarios.Margin = new System.Windows.Forms.Padding(2);
+            this.subMenuUsuarios.Location = new System.Drawing.Point(3, 849);
+            this.subMenuUsuarios.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.subMenuUsuarios.Name = "subMenuUsuarios";
-            this.subMenuUsuarios.Size = new System.Drawing.Size(191, 31);
+            this.subMenuUsuarios.Size = new System.Drawing.Size(255, 38);
             this.subMenuUsuarios.TabIndex = 15;
             // 
             // btnAltaUsuario
@@ -220,10 +220,10 @@ namespace farmatown.Vistas
             this.btnAltaUsuario.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAltaUsuario.ForeColor = System.Drawing.Color.DimGray;
             this.btnAltaUsuario.Location = new System.Drawing.Point(0, 0);
-            this.btnAltaUsuario.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAltaUsuario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAltaUsuario.Name = "btnAltaUsuario";
-            this.btnAltaUsuario.Padding = new System.Windows.Forms.Padding(23, 0, 0, 0);
-            this.btnAltaUsuario.Size = new System.Drawing.Size(191, 31);
+            this.btnAltaUsuario.Padding = new System.Windows.Forms.Padding(31, 0, 0, 0);
+            this.btnAltaUsuario.Size = new System.Drawing.Size(255, 38);
             this.btnAltaUsuario.TabIndex = 17;
             this.btnAltaUsuario.Text = "Crear usuario";
             this.btnAltaUsuario.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -238,11 +238,11 @@ namespace farmatown.Vistas
             this.btnReportes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReportes.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReportes.ForeColor = System.Drawing.Color.DimGray;
-            this.btnReportes.Location = new System.Drawing.Point(2, 577);
-            this.btnReportes.Margin = new System.Windows.Forms.Padding(2);
+            this.btnReportes.Location = new System.Drawing.Point(8, 710);
+            this.btnReportes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnReportes.Name = "btnReportes";
-            this.btnReportes.Padding = new System.Windows.Forms.Padding(7, 0, 0, 0);
-            this.btnReportes.Size = new System.Drawing.Size(191, 30);
+            this.btnReportes.Padding = new System.Windows.Forms.Padding(9, 0, 0, 0);
+            this.btnReportes.Size = new System.Drawing.Size(255, 37);
             this.btnReportes.TabIndex = 14;
             this.btnReportes.Text = "REPORTES";
             this.btnReportes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -256,11 +256,11 @@ namespace farmatown.Vistas
             this.btnAcercaDe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAcercaDe.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAcercaDe.ForeColor = System.Drawing.Color.DimGray;
-            this.btnAcercaDe.Location = new System.Drawing.Point(2, 491);
-            this.btnAcercaDe.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAcercaDe.Location = new System.Drawing.Point(7, 604);
+            this.btnAcercaDe.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAcercaDe.Name = "btnAcercaDe";
-            this.btnAcercaDe.Padding = new System.Windows.Forms.Padding(7, 0, 0, 0);
-            this.btnAcercaDe.Size = new System.Drawing.Size(191, 30);
+            this.btnAcercaDe.Padding = new System.Windows.Forms.Padding(9, 0, 0, 0);
+            this.btnAcercaDe.Size = new System.Drawing.Size(255, 37);
             this.btnAcercaDe.TabIndex = 14;
             this.btnAcercaDe.Text = "ACERCA DE";
             this.btnAcercaDe.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -276,11 +276,11 @@ namespace farmatown.Vistas
             this.btnArchivo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnArchivo.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnArchivo.ForeColor = System.Drawing.Color.DimGray;
-            this.btnArchivo.Location = new System.Drawing.Point(-2, 81);
-            this.btnArchivo.Margin = new System.Windows.Forms.Padding(2);
+            this.btnArchivo.Location = new System.Drawing.Point(6, 100);
+            this.btnArchivo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnArchivo.Name = "btnArchivo";
-            this.btnArchivo.Padding = new System.Windows.Forms.Padding(7, 0, 0, 0);
-            this.btnArchivo.Size = new System.Drawing.Size(195, 30);
+            this.btnArchivo.Padding = new System.Windows.Forms.Padding(9, 0, 0, 0);
+            this.btnArchivo.Size = new System.Drawing.Size(260, 37);
             this.btnArchivo.TabIndex = 9;
             this.btnArchivo.Text = "INICIO";
             this.btnArchivo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -291,10 +291,10 @@ namespace farmatown.Vistas
             // 
             this.subMenuArchivo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
             this.subMenuArchivo.Controls.Add(this.btnSalir);
-            this.subMenuArchivo.Location = new System.Drawing.Point(2, 114);
-            this.subMenuArchivo.Margin = new System.Windows.Forms.Padding(2);
+            this.subMenuArchivo.Location = new System.Drawing.Point(3, 140);
+            this.subMenuArchivo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.subMenuArchivo.Name = "subMenuArchivo";
-            this.subMenuArchivo.Size = new System.Drawing.Size(191, 31);
+            this.subMenuArchivo.Size = new System.Drawing.Size(255, 38);
             this.subMenuArchivo.TabIndex = 10;
             // 
             // btnSalir
@@ -307,10 +307,10 @@ namespace farmatown.Vistas
             this.btnSalir.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalir.ForeColor = System.Drawing.Color.DimGray;
             this.btnSalir.Location = new System.Drawing.Point(0, 0);
-            this.btnSalir.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSalir.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Padding = new System.Windows.Forms.Padding(23, 0, 0, 0);
-            this.btnSalir.Size = new System.Drawing.Size(191, 30);
+            this.btnSalir.Padding = new System.Windows.Forms.Padding(31, 0, 0, 0);
+            this.btnSalir.Size = new System.Drawing.Size(255, 37);
             this.btnSalir.TabIndex = 0;
             this.btnSalir.Text = "Cerrar sesión";
             this.btnSalir.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -321,10 +321,10 @@ namespace farmatown.Vistas
             // 
             this.subMenuReportes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
             this.subMenuReportes.Controls.Add(this.btnVerReporte);
-            this.subMenuReportes.Location = new System.Drawing.Point(2, 610);
-            this.subMenuReportes.Margin = new System.Windows.Forms.Padding(2);
+            this.subMenuReportes.Location = new System.Drawing.Point(3, 751);
+            this.subMenuReportes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.subMenuReportes.Name = "subMenuReportes";
-            this.subMenuReportes.Size = new System.Drawing.Size(191, 31);
+            this.subMenuReportes.Size = new System.Drawing.Size(255, 38);
             this.subMenuReportes.TabIndex = 8;
             // 
             // btnVerReporte
@@ -338,10 +338,10 @@ namespace farmatown.Vistas
             this.btnVerReporte.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVerReporte.ForeColor = System.Drawing.Color.DimGray;
             this.btnVerReporte.Location = new System.Drawing.Point(0, 0);
-            this.btnVerReporte.Margin = new System.Windows.Forms.Padding(2);
+            this.btnVerReporte.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnVerReporte.Name = "btnVerReporte";
-            this.btnVerReporte.Padding = new System.Windows.Forms.Padding(23, 0, 0, 0);
-            this.btnVerReporte.Size = new System.Drawing.Size(191, 30);
+            this.btnVerReporte.Padding = new System.Windows.Forms.Padding(31, 0, 0, 0);
+            this.btnVerReporte.Size = new System.Drawing.Size(255, 37);
             this.btnVerReporte.TabIndex = 16;
             this.btnVerReporte.Text = "Ver reporte";
             this.btnVerReporte.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -352,10 +352,10 @@ namespace farmatown.Vistas
             // 
             this.subMenuAcercaDe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
             this.subMenuAcercaDe.Controls.Add(this.btnInformacion);
-            this.subMenuAcercaDe.Location = new System.Drawing.Point(2, 525);
-            this.subMenuAcercaDe.Margin = new System.Windows.Forms.Padding(2);
+            this.subMenuAcercaDe.Location = new System.Drawing.Point(3, 646);
+            this.subMenuAcercaDe.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.subMenuAcercaDe.Name = "subMenuAcercaDe";
-            this.subMenuAcercaDe.Size = new System.Drawing.Size(191, 31);
+            this.subMenuAcercaDe.Size = new System.Drawing.Size(255, 38);
             this.subMenuAcercaDe.TabIndex = 6;
             // 
             // btnInformacion
@@ -369,10 +369,10 @@ namespace farmatown.Vistas
             this.btnInformacion.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInformacion.ForeColor = System.Drawing.Color.DimGray;
             this.btnInformacion.Location = new System.Drawing.Point(0, 0);
-            this.btnInformacion.Margin = new System.Windows.Forms.Padding(2);
+            this.btnInformacion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnInformacion.Name = "btnInformacion";
-            this.btnInformacion.Padding = new System.Windows.Forms.Padding(23, 0, 0, 0);
-            this.btnInformacion.Size = new System.Drawing.Size(191, 30);
+            this.btnInformacion.Padding = new System.Windows.Forms.Padding(31, 0, 0, 0);
+            this.btnInformacion.Size = new System.Drawing.Size(255, 37);
             this.btnInformacion.TabIndex = 12;
             this.btnInformacion.Text = "Info";
             this.btnInformacion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -384,10 +384,10 @@ namespace farmatown.Vistas
             this.subMenuTransacciones.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
             this.subMenuTransacciones.Controls.Add(this.btnArticulos);
             this.subMenuTransacciones.Controls.Add(this.btnClientes);
-            this.subMenuTransacciones.Location = new System.Drawing.Point(2, 410);
-            this.subMenuTransacciones.Margin = new System.Windows.Forms.Padding(2);
+            this.subMenuTransacciones.Location = new System.Drawing.Point(3, 505);
+            this.subMenuTransacciones.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.subMenuTransacciones.Name = "subMenuTransacciones";
-            this.subMenuTransacciones.Size = new System.Drawing.Size(191, 60);
+            this.subMenuTransacciones.Size = new System.Drawing.Size(255, 74);
             this.subMenuTransacciones.TabIndex = 4;
             // 
             // btnArticulos
@@ -400,11 +400,11 @@ namespace farmatown.Vistas
             this.btnArticulos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnArticulos.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnArticulos.ForeColor = System.Drawing.Color.DimGray;
-            this.btnArticulos.Location = new System.Drawing.Point(0, 30);
-            this.btnArticulos.Margin = new System.Windows.Forms.Padding(2);
+            this.btnArticulos.Location = new System.Drawing.Point(0, 37);
+            this.btnArticulos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnArticulos.Name = "btnArticulos";
-            this.btnArticulos.Padding = new System.Windows.Forms.Padding(23, 0, 0, 0);
-            this.btnArticulos.Size = new System.Drawing.Size(191, 30);
+            this.btnArticulos.Padding = new System.Windows.Forms.Padding(31, 0, 0, 0);
+            this.btnArticulos.Size = new System.Drawing.Size(255, 37);
             this.btnArticulos.TabIndex = 1;
             this.btnArticulos.Text = "Artículos";
             this.btnArticulos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -422,10 +422,10 @@ namespace farmatown.Vistas
             this.btnClientes.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClientes.ForeColor = System.Drawing.Color.DimGray;
             this.btnClientes.Location = new System.Drawing.Point(0, 0);
-            this.btnClientes.Margin = new System.Windows.Forms.Padding(2);
+            this.btnClientes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnClientes.Name = "btnClientes";
-            this.btnClientes.Padding = new System.Windows.Forms.Padding(23, 0, 0, 0);
-            this.btnClientes.Size = new System.Drawing.Size(191, 30);
+            this.btnClientes.Padding = new System.Windows.Forms.Padding(31, 0, 0, 0);
+            this.btnClientes.Size = new System.Drawing.Size(255, 37);
             this.btnClientes.TabIndex = 0;
             this.btnClientes.Text = "Clientes";
             this.btnClientes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -441,11 +441,11 @@ namespace farmatown.Vistas
             this.btnTransacciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTransacciones.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTransacciones.ForeColor = System.Drawing.Color.DimGray;
-            this.btnTransacciones.Location = new System.Drawing.Point(2, 381);
-            this.btnTransacciones.Margin = new System.Windows.Forms.Padding(2);
+            this.btnTransacciones.Location = new System.Drawing.Point(11, 469);
+            this.btnTransacciones.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnTransacciones.Name = "btnTransacciones";
-            this.btnTransacciones.Padding = new System.Windows.Forms.Padding(7, 0, 0, 0);
-            this.btnTransacciones.Size = new System.Drawing.Size(191, 30);
+            this.btnTransacciones.Padding = new System.Windows.Forms.Padding(9, 0, 0, 0);
+            this.btnTransacciones.Size = new System.Drawing.Size(255, 37);
             this.btnTransacciones.TabIndex = 3;
             this.btnTransacciones.Text = "VER";
             this.btnTransacciones.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -457,10 +457,10 @@ namespace farmatown.Vistas
             this.subMenuFacturas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
             this.subMenuFacturas.Controls.Add(this.btnVerFacturas);
             this.subMenuFacturas.Controls.Add(this.btnFacturar);
-            this.subMenuFacturas.Location = new System.Drawing.Point(0, 193);
-            this.subMenuFacturas.Margin = new System.Windows.Forms.Padding(2);
+            this.subMenuFacturas.Location = new System.Drawing.Point(0, 238);
+            this.subMenuFacturas.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.subMenuFacturas.Name = "subMenuFacturas";
-            this.subMenuFacturas.Size = new System.Drawing.Size(193, 57);
+            this.subMenuFacturas.Size = new System.Drawing.Size(257, 70);
             this.subMenuFacturas.TabIndex = 2;
             // 
             // btnVerFacturas
@@ -473,11 +473,11 @@ namespace farmatown.Vistas
             this.btnVerFacturas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVerFacturas.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVerFacturas.ForeColor = System.Drawing.Color.DimGray;
-            this.btnVerFacturas.Location = new System.Drawing.Point(0, 30);
-            this.btnVerFacturas.Margin = new System.Windows.Forms.Padding(2);
+            this.btnVerFacturas.Location = new System.Drawing.Point(0, 37);
+            this.btnVerFacturas.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnVerFacturas.Name = "btnVerFacturas";
-            this.btnVerFacturas.Padding = new System.Windows.Forms.Padding(23, 0, 0, 0);
-            this.btnVerFacturas.Size = new System.Drawing.Size(193, 30);
+            this.btnVerFacturas.Padding = new System.Windows.Forms.Padding(31, 0, 0, 0);
+            this.btnVerFacturas.Size = new System.Drawing.Size(257, 37);
             this.btnVerFacturas.TabIndex = 1;
             this.btnVerFacturas.Text = "Ver Facturas";
             this.btnVerFacturas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -495,10 +495,10 @@ namespace farmatown.Vistas
             this.btnFacturar.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFacturar.ForeColor = System.Drawing.Color.DimGray;
             this.btnFacturar.Location = new System.Drawing.Point(0, 0);
-            this.btnFacturar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnFacturar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnFacturar.Name = "btnFacturar";
-            this.btnFacturar.Padding = new System.Windows.Forms.Padding(23, 0, 0, 0);
-            this.btnFacturar.Size = new System.Drawing.Size(193, 30);
+            this.btnFacturar.Padding = new System.Windows.Forms.Padding(31, 0, 0, 0);
+            this.btnFacturar.Size = new System.Drawing.Size(257, 37);
             this.btnFacturar.TabIndex = 0;
             this.btnFacturar.Text = "Facturar";
             this.btnFacturar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -514,11 +514,11 @@ namespace farmatown.Vistas
             this.btnFacturas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFacturas.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFacturas.ForeColor = System.Drawing.Color.DimGray;
-            this.btnFacturas.Location = new System.Drawing.Point(0, 160);
-            this.btnFacturas.Margin = new System.Windows.Forms.Padding(2);
+            this.btnFacturas.Location = new System.Drawing.Point(6, 197);
+            this.btnFacturas.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnFacturas.Name = "btnFacturas";
-            this.btnFacturas.Padding = new System.Windows.Forms.Padding(7, 0, 0, 0);
-            this.btnFacturas.Size = new System.Drawing.Size(193, 30);
+            this.btnFacturas.Padding = new System.Windows.Forms.Padding(9, 0, 0, 0);
+            this.btnFacturas.Size = new System.Drawing.Size(257, 37);
             this.btnFacturas.TabIndex = 1;
             this.btnFacturas.Text = "FACTURAS";
             this.btnFacturas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -530,9 +530,9 @@ namespace farmatown.Vistas
             this.LogoPanel.BackColor = System.Drawing.Color.White;
             this.LogoPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.LogoPanel.Location = new System.Drawing.Point(0, 0);
-            this.LogoPanel.Margin = new System.Windows.Forms.Padding(2);
+            this.LogoPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.LogoPanel.Name = "LogoPanel";
-            this.LogoPanel.Size = new System.Drawing.Size(195, 77);
+            this.LogoPanel.Size = new System.Drawing.Size(260, 95);
             this.LogoPanel.TabIndex = 0;
             // 
             // lblNombre
@@ -542,20 +542,20 @@ namespace farmatown.Vistas
             this.lblNombre.BackColor = System.Drawing.Color.Transparent;
             this.lblNombre.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNombre.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.lblNombre.Location = new System.Drawing.Point(454, 690);
-            this.lblNombre.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblNombre.Location = new System.Drawing.Point(605, 849);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(99, 22);
+            this.lblNombre.Size = new System.Drawing.Size(231, 44);
             this.lblNombre.TabIndex = 2;
-            this.lblNombre.Text = "Bienvenido";
+            this.lblNombre.Text = "Bienvenido/a";
             // 
             // FrmPrincipal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(914, 734);
+            this.ClientSize = new System.Drawing.Size(1219, 903);
             this.Controls.Add(this.PanelContainer);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FrmPrincipal";
             this.Text = "FarmaTown";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

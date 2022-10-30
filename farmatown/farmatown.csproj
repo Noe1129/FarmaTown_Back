@@ -281,6 +281,7 @@
     <None Include="Resources\logoStock.jpeg" />
     <None Include="Resources\FondoPrincipal.jpeg" />
     <None Include="Resources\FondoPrincipal2.jpeg" />
+    <None Include="Resources\fondoColor.jpeg" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
