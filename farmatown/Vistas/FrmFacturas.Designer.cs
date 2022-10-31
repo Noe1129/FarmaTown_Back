@@ -44,7 +44,9 @@ namespace farmatown.Vistas
             this.ColAcciones = new System.Windows.Forms.DataGridViewButtonColumn();
             this.btnEliminar = new System.Windows.Forms.DataGridViewButtonColumn();
             this.label3 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvConsultar)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label2
@@ -52,7 +54,7 @@ namespace farmatown.Vistas
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.White;
             this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(556, 72);
+            this.label2.Location = new System.Drawing.Point(453, 38);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(82, 19);
             this.label2.TabIndex = 28;
@@ -63,7 +65,7 @@ namespace farmatown.Vistas
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.White;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(323, 72);
+            this.label1.Location = new System.Drawing.Point(220, 38);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(85, 19);
             this.label1.TabIndex = 27;
@@ -73,7 +75,7 @@ namespace farmatown.Vistas
             // 
             this.dtpFechaHasta.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpFechaHasta.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpFechaHasta.Location = new System.Drawing.Point(556, 98);
+            this.dtpFechaHasta.Location = new System.Drawing.Point(453, 64);
             this.dtpFechaHasta.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.dtpFechaHasta.Name = "dtpFechaHasta";
             this.dtpFechaHasta.Size = new System.Drawing.Size(182, 25);
@@ -83,7 +85,7 @@ namespace farmatown.Vistas
             // 
             this.dtpFechaDesde.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpFechaDesde.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpFechaDesde.Location = new System.Drawing.Point(324, 98);
+            this.dtpFechaDesde.Location = new System.Drawing.Point(221, 64);
             this.dtpFechaDesde.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.dtpFechaDesde.Name = "dtpFechaDesde";
             this.dtpFechaDesde.Size = new System.Drawing.Size(193, 25);
@@ -95,7 +97,7 @@ namespace farmatown.Vistas
             this.btnEliminarFiltro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEliminarFiltro.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminarFiltro.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.btnEliminarFiltro.Location = new System.Drawing.Point(1007, 719);
+            this.btnEliminarFiltro.Location = new System.Drawing.Point(904, 676);
             this.btnEliminarFiltro.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnEliminarFiltro.Name = "btnEliminarFiltro";
             this.btnEliminarFiltro.Size = new System.Drawing.Size(120, 31);
@@ -110,7 +112,7 @@ namespace farmatown.Vistas
             this.btnFiltrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFiltrar.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFiltrar.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.btnFiltrar.Location = new System.Drawing.Point(766, 98);
+            this.btnFiltrar.Location = new System.Drawing.Point(663, 64);
             this.btnFiltrar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnFiltrar.Name = "btnFiltrar";
             this.btnFiltrar.Size = new System.Drawing.Size(130, 32);
@@ -133,7 +135,7 @@ namespace farmatown.Vistas
             this.TipoPago,
             this.ColAcciones,
             this.btnEliminar});
-            this.dgvConsultar.Location = new System.Drawing.Point(188, 136);
+            this.dgvConsultar.Location = new System.Drawing.Point(85, 102);
             this.dgvConsultar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.dgvConsultar.Name = "dgvConsultar";
             this.dgvConsultar.ReadOnly = true;
@@ -211,26 +213,40 @@ namespace farmatown.Vistas
             this.label3.TabIndex = 29;
             this.label3.Text = "FACTURAS";
             // 
+            // groupBox1
+            // 
+            this.groupBox1.BackgroundImage = global::farmatown.Properties.Resources.fondoCeleste;
+            this.groupBox1.Controls.Add(this.dtpFechaDesde);
+            this.groupBox1.Controls.Add(this.dgvConsultar);
+            this.groupBox1.Controls.Add(this.btnEliminarFiltro);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.btnFiltrar);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.dtpFechaHasta);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(78, 66);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(1110, 722);
+            this.groupBox1.TabIndex = 30;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Facturas";
+            // 
             // FrmFacturas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::farmatown.Properties.Resources.fondoBlanco2;
-            this.ClientSize = new System.Drawing.Size(1112, 779);
+            this.ClientSize = new System.Drawing.Size(1233, 840);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.dtpFechaHasta);
-            this.Controls.Add(this.dtpFechaDesde);
-            this.Controls.Add(this.btnEliminarFiltro);
-            this.Controls.Add(this.btnFiltrar);
-            this.Controls.Add(this.dgvConsultar);
             this.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "FrmFacturas";
             this.Text = "FrmFacturas";
             this.Load += new System.EventHandler(this.FrmFacturas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvConsultar)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -253,5 +269,6 @@ namespace farmatown.Vistas
         private System.Windows.Forms.DataGridViewTextBoxColumn TipoPago;
         private System.Windows.Forms.DataGridViewButtonColumn ColAcciones;
         private System.Windows.Forms.DataGridViewButtonColumn btnEliminar;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }

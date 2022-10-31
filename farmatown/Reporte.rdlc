@@ -387,7 +387,7 @@
                 <ColumnSeparatorColor>Black</ColumnSeparatorColor>
               </ChartLegend>
             </ChartLegends>
-            <Palette>Pacific</Palette>
+            <Palette>Pastel</Palette>
             <ChartBorderSkin>
               <Style>
                 <BackgroundColor>Gray</BackgroundColor>
@@ -406,9 +406,9 @@
             </ChartNoDataMessage>
             <DataSetName>DataSet1</DataSetName>
             <Top>0.0687cm</Top>
-            <Left>6.46944cm</Left>
-            <Height>4.15333cm</Height>
-            <Width>7.5cm</Width>
+            <Left>6.43417cm</Left>
+            <Height>5.47625cm</Height>
+            <Width>8.87583cm</Width>
             <Style>
               <Border>
                 <Color>LightGrey</Color>
@@ -465,10 +465,15 @@
             </Style>
           </Textbox>
         </ReportItems>
-        <Height>1.70684in</Height>
-        <Style />
+        <Height>2.18305in</Height>
+        <Style>
+          <Border>
+            <Color>DarkBlue</Color>
+            <Style>None</Style>
+          </Border>
+        </Style>
       </Body>
-      <Width>5.53125in</Width>
+      <Width>6.04145in</Width>
       <Page>
         <PageHeight>29.7cm</PageHeight>
         <PageWidth>21cm</PageWidth>

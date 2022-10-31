@@ -78,7 +78,7 @@ namespace farmatown.Vistas
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(98, 21);
             this.label2.TabIndex = 45;
-            this.label2.Text = "ARTICULOS";
+            this.label2.Text = "ARTÍCULOS";
             // 
             // groupBox1
             // 
@@ -305,9 +305,9 @@ namespace farmatown.Vistas
             this.groupBox2.Controls.Add(this.txtNombre);
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(815, 473);
+            this.groupBox2.Location = new System.Drawing.Point(376, 472);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(364, 296);
+            this.groupBox2.Size = new System.Drawing.Size(584, 296);
             this.groupBox2.TabIndex = 47;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Nuevo artículo";
@@ -316,7 +316,7 @@ namespace farmatown.Vistas
             // cboLaboratorio
             // 
             this.cboLaboratorio.FormattingEnabled = true;
-            this.cboLaboratorio.Location = new System.Drawing.Point(147, 172);
+            this.cboLaboratorio.Location = new System.Drawing.Point(244, 172);
             this.cboLaboratorio.Name = "cboLaboratorio";
             this.cboLaboratorio.Size = new System.Drawing.Size(198, 27);
             this.cboLaboratorio.TabIndex = 12;
@@ -324,7 +324,7 @@ namespace farmatown.Vistas
             // cboDroga
             // 
             this.cboDroga.FormattingEnabled = true;
-            this.cboDroga.Location = new System.Drawing.Point(147, 140);
+            this.cboDroga.Location = new System.Drawing.Point(244, 140);
             this.cboDroga.Name = "cboDroga";
             this.cboDroga.Size = new System.Drawing.Size(198, 27);
             this.cboDroga.TabIndex = 11;
@@ -333,7 +333,7 @@ namespace farmatown.Vistas
             // 
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Location = new System.Drawing.Point(89, 140);
+            this.label8.Location = new System.Drawing.Point(186, 140);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(50, 19);
             this.label8.TabIndex = 10;
@@ -343,7 +343,7 @@ namespace farmatown.Vistas
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Location = new System.Drawing.Point(56, 175);
+            this.label7.Location = new System.Drawing.Point(153, 175);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(83, 19);
             this.label7.TabIndex = 9;
@@ -351,7 +351,7 @@ namespace farmatown.Vistas
             // 
             // txtPrecio
             // 
-            this.txtPrecio.Location = new System.Drawing.Point(147, 72);
+            this.txtPrecio.Location = new System.Drawing.Point(244, 72);
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.Size = new System.Drawing.Size(198, 25);
             this.txtPrecio.TabIndex = 8;
@@ -360,7 +360,7 @@ namespace farmatown.Vistas
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Location = new System.Drawing.Point(14, 78);
+            this.label6.Location = new System.Drawing.Point(111, 78);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(125, 19);
             this.label6.TabIndex = 7;
@@ -368,7 +368,7 @@ namespace farmatown.Vistas
             // 
             // txtStockInicial
             // 
-            this.txtStockInicial.Location = new System.Drawing.Point(147, 203);
+            this.txtStockInicial.Location = new System.Drawing.Point(244, 203);
             this.txtStockInicial.Name = "txtStockInicial";
             this.txtStockInicial.Size = new System.Drawing.Size(198, 25);
             this.txtStockInicial.TabIndex = 6;
@@ -377,7 +377,7 @@ namespace farmatown.Vistas
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Location = new System.Drawing.Point(50, 206);
+            this.label5.Location = new System.Drawing.Point(147, 206);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(89, 19);
             this.label5.TabIndex = 5;
@@ -387,7 +387,7 @@ namespace farmatown.Vistas
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Location = new System.Drawing.Point(28, 108);
+            this.label4.Location = new System.Drawing.Point(125, 108);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(111, 19);
             this.label4.TabIndex = 4;
@@ -396,7 +396,7 @@ namespace farmatown.Vistas
             // cboTipoArticulo
             // 
             this.cboTipoArticulo.FormattingEnabled = true;
-            this.cboTipoArticulo.Location = new System.Drawing.Point(147, 105);
+            this.cboTipoArticulo.Location = new System.Drawing.Point(244, 105);
             this.cboTipoArticulo.Name = "cboTipoArticulo";
             this.cboTipoArticulo.Size = new System.Drawing.Size(198, 27);
             this.cboTipoArticulo.TabIndex = 3;
@@ -407,7 +407,7 @@ namespace farmatown.Vistas
             this.btnCrearArticulo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCrearArticulo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCrearArticulo.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.btnCrearArticulo.Location = new System.Drawing.Point(245, 244);
+            this.btnCrearArticulo.Location = new System.Drawing.Point(342, 244);
             this.btnCrearArticulo.Name = "btnCrearArticulo";
             this.btnCrearArticulo.Size = new System.Drawing.Size(100, 30);
             this.btnCrearArticulo.TabIndex = 2;
@@ -417,7 +417,7 @@ namespace farmatown.Vistas
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(147, 42);
+            this.txtNombre.Location = new System.Drawing.Point(244, 42);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(198, 25);
             this.txtNombre.TabIndex = 1;
@@ -426,7 +426,7 @@ namespace farmatown.Vistas
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Location = new System.Drawing.Point(72, 45);
+            this.label3.Location = new System.Drawing.Point(169, 45);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(67, 19);
             this.label3.TabIndex = 0;

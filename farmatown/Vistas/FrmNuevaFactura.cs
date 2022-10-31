@@ -271,7 +271,7 @@ namespace farmatown.Vistas
             DataTable tabla = controladorArticulos.obtenerArticulosComboBox();
             cboArticulos.DataSource = tabla;
             cboArticulos.ValueMember = "idArticulo";
-            cboArticulos.DisplayMember = "nombre";
+            cboArticulos.DisplayMember = "Articulo";
 
         }
 

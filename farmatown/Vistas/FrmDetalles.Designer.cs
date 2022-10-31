@@ -39,7 +39,9 @@ namespace farmatown.Vistas
             this.ColTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Eliminar = new System.Windows.Forms.DataGridViewButtonColumn();
             this.lblNroFactura = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDetalles)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnCerrar
@@ -50,7 +52,7 @@ namespace farmatown.Vistas
             this.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnCerrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCerrar.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.btnCerrar.Location = new System.Drawing.Point(565, 718);
+            this.btnCerrar.Location = new System.Drawing.Point(623, 635);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(161, 34);
             this.btnCerrar.TabIndex = 37;
@@ -72,7 +74,7 @@ namespace farmatown.Vistas
             this.ColMontoDescontado,
             this.ColTotal,
             this.Eliminar});
-            this.dgvDetalles.Location = new System.Drawing.Point(20, 79);
+            this.dgvDetalles.Location = new System.Drawing.Point(75, 54);
             this.dgvDetalles.Margin = new System.Windows.Forms.Padding(4);
             this.dgvDetalles.Name = "dgvDetalles";
             this.dgvDetalles.ReadOnly = true;
@@ -141,23 +143,34 @@ namespace farmatown.Vistas
             // 
             this.lblNroFactura.AutoSize = true;
             this.lblNroFactura.BackColor = System.Drawing.Color.White;
-            this.lblNroFactura.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNroFactura.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNroFactura.Location = new System.Drawing.Point(16, 31);
             this.lblNroFactura.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNroFactura.Name = "lblNroFactura";
-            this.lblNroFactura.Size = new System.Drawing.Size(197, 19);
+            this.lblNroFactura.Size = new System.Drawing.Size(300, 21);
             this.lblNroFactura.TabIndex = 38;
-            this.lblNroFactura.Text = "Detalles de la factura número: ";
+            this.lblNroFactura.Text = "DETALLES DE LA FACTURA NÚMERO: ";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.BackgroundImage = global::farmatown.Properties.Resources.fondoCeleste;
+            this.groupBox1.Controls.Add(this.dgvDetalles);
+            this.groupBox1.Controls.Add(this.btnCerrar);
+            this.groupBox1.Location = new System.Drawing.Point(12, 72);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(1490, 690);
+            this.groupBox1.TabIndex = 39;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Detalles de Factura";
             // 
             // FrmDetalles
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::farmatown.Properties.Resources.fondoBlanco2;
-            this.ClientSize = new System.Drawing.Size(1375, 794);
+            this.ClientSize = new System.Drawing.Size(1514, 794);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.lblNroFactura);
-            this.Controls.Add(this.btnCerrar);
-            this.Controls.Add(this.dgvDetalles);
             this.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmDetalles";
@@ -165,6 +178,7 @@ namespace farmatown.Vistas
             this.Text = "FrmDetalles";
             this.Load += new System.EventHandler(this.FrmDetalles_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDetalles)).EndInit();
+            this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -182,5 +196,6 @@ namespace farmatown.Vistas
         private System.Windows.Forms.DataGridViewTextBoxColumn ColMontoDescontado;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColTotal;
         private System.Windows.Forms.DataGridViewButtonColumn Eliminar;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }

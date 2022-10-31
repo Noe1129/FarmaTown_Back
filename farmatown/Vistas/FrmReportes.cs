@@ -24,11 +24,11 @@ namespace farmatown.Vistas
         private void FrmReportes_Load(object sender, EventArgs e)
         {
             // TODO: esta línea de código carga datos en la tabla 'dataVista.facturasObraSocial' Puede moverla o quitarla según sea necesario.
-            this.facturasObraSocialTableAdapter.Fill(this.dataVista.facturasObraSocial);
+            //this.facturasObraSocialTableAdapter.Fill(this.dataVista.facturasObraSocial);
             // TODO: esta línea de código carga datos en la tabla 'dataVista.clientes_frecuentes' Puede moverla o quitarla según sea necesario.
-            this.clientes_frecuentesTableAdapter.Fill(this.dataVista.clientes_frecuentes);
+            //this.clientes_frecuentesTableAdapter.Fill(this.dataVista.clientes_frecuentes);
             // TODO: esta línea de código carga datos en la tabla 'dataVista.articulosVendidos' Puede moverla o quitarla según sea necesario.
-            this.articulosVendidosTableAdapter.Fill(this.dataVista.articulosVendidos);
+            //this.articulosVendidosTableAdapter.Fill(this.dataVista.articulosVendidos);
 
 
 
