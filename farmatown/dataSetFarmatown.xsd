@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dataSetFarmatown" targetNamespace="http://tempuri.org/dataSetFarmatown.xsd" xmlns:mstns="http://tempuri.org/dataSetFarmatown.xsd" xmlns="http://tempuri.org/dataSetFarmatown.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="farmatown3ConnectionString2" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="farmatown3ConnectionString2 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.farmatown.Properties.Settings.GlobalReference.Default.farmatown3ConnectionString2" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="facturasObraSocialTableAdapter" GeneratorDataComponentClassName="facturasObraSocialTableAdapter" Name="facturasObraSocial" UserDataComponentName="facturasObraSocialTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="farmatown3ConnectionString2 (Settings)" DbObjectName="farmatown3.dbo.facturasObraSocial" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Cantidad_Con_OS, Cantidad_Sin_OS FROM dbo.facturasObraSocial</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Cantidad_Con_OS" DataSetColumn="Cantidad_Con_OS" />
+              <Mapping SourceColumn="Cantidad_Sin_OS" DataSetColumn="Cantidad_Sin_OS" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dataSetFarmatown" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="dataSetFarmatown" msprop:Generator_UserDSName="dataSetFarmatown">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="facturasObraSocial" msprop:Generator_TableClassName="facturasObraSocialDataTable" msprop:Generator_TableVarName="tablefacturasObraSocial" msprop:Generator_TablePropName="facturasObraSocial" msprop:Generator_RowDeletingName="facturasObraSocialRowDeleting" msprop:Generator_RowChangingName="facturasObraSocialRowChanging" msprop:Generator_RowEvHandlerName="facturasObraSocialRowChangeEventHandler" msprop:Generator_RowDeletedName="facturasObraSocialRowDeleted" msprop:Generator_UserTableName="facturasObraSocial" msprop:Generator_RowChangedName="facturasObraSocialRowChanged" msprop:Generator_RowEvArgName="facturasObraSocialRowChangeEvent" msprop:Generator_RowClassName="facturasObraSocialRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Cantidad_Con_OS" msprop:Generator_ColumnVarNameInTable="columnCantidad_Con_OS" msprop:Generator_ColumnPropNameInRow="Cantidad_Con_OS" msprop:Generator_ColumnPropNameInTable="Cantidad_Con_OSColumn" msprop:Generator_UserColumnName="Cantidad_Con_OS" type="xs:int" minOccurs="0" />
+              <xs:element name="Cantidad_Sin_OS" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnCantidad_Sin_OS" msprop:Generator_ColumnPropNameInRow="Cantidad_Sin_OS" msprop:Generator_ColumnPropNameInTable="Cantidad_Sin_OSColumn" msprop:Generator_UserColumnName="Cantidad_Sin_OS" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

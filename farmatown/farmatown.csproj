@@ -70,15 +70,13 @@
     <Compile Include="Controllers\FacturaController.cs" />
     <Compile Include="Controllers\ReportesController.cs" />
     <Compile Include="Controllers\UserController.cs" />
-    <Compile Include="DataVista.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DataVista.xsd</DependentUpon>
+    <Compile Include="dataSetFarmatown.cs">
+      <DependentUpon>dataSetFarmatown.xsd</DependentUpon>
     </Compile>
-    <Compile Include="farmatown3DataSet.Designer.cs">
+    <Compile Include="dataSetFarmatown.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>farmatown3DataSet.xsd</DependentUpon>
+      <DependentUpon>dataSetFarmatown.xsd</DependentUpon>
     </Compile>
     <Compile Include="Modelos\Articulo.cs" />
     <Compile Include="Modelos\Cliente.cs" />
@@ -231,27 +229,16 @@
     <EmbeddedResource Include="Vistas\FrmReportes.resx">
       <DependentUpon>FrmReportes.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="DataVista.xsc">
-      <DependentUpon>DataVista.xsd</DependentUpon>
+    <None Include="dataSetFarmatown.xsc">
+      <DependentUpon>dataSetFarmatown.xsd</DependentUpon>
     </None>
-    <None Include="DataVista.xsd">
-      <SubType>Designer</SubType>
+    <None Include="dataSetFarmatown.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DataVista.Designer.cs</LastGenOutput>
-    </None>
-    <None Include="DataVista.xss">
-      <DependentUpon>DataVista.xsd</DependentUpon>
-    </None>
-    <None Include="farmatown3DataSet.xsc">
-      <DependentUpon>farmatown3DataSet.xsd</DependentUpon>
-    </None>
-    <None Include="farmatown3DataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>farmatown3DataSet.Designer.cs</LastGenOutput>
+      <LastGenOutput>dataSetFarmatown.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="farmatown3DataSet.xss">
-      <DependentUpon>farmatown3DataSet.xsd</DependentUpon>
+    <None Include="dataSetFarmatown.xss">
+      <DependentUpon>dataSetFarmatown.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

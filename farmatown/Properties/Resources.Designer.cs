@@ -191,7 +191,7 @@ namespace farmatown.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Data Source=NOE-PC\SQLEXPRESS;Initial Catalog=farmatown;Integrated Security=True.
+        ///   Busca una cadena traducida similar a Data Source=NOE-PC\SQLEXPRESS;Initial Catalog=farmatown3;Integrated Security=True.
         /// </summary>
         internal static string strConnection {
             get {

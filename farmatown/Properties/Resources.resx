@@ -128,7 +128,7 @@
     <value>..\Resources\logoFT2.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="strConnection" xml:space="preserve">
-    <value>Data Source=NOE-PC\SQLEXPRESS;Initial Catalog=farmatown;Integrated Security=True</value>
+    <value>Data Source=NOE-PC\SQLEXPRESS;Initial Catalog=farmatown3;Integrated Security=True</value>
     <comment>Mi cadena de conexion</comment>
   </data>
   <data name="logoFT3" type="System.Resources.ResXFileRef, System.Windows.Forms">
