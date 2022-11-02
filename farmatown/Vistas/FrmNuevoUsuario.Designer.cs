@@ -29,6 +29,7 @@ namespace farmatown.Vistas
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmNuevoUsuario));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dgvConsultar = new System.Windows.Forms.DataGridView();
             this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -58,9 +59,11 @@ namespace farmatown.Vistas
             this.groupBox1.BackgroundImage = global::farmatown.Properties.Resources.fondoCeleste;
             this.groupBox1.Controls.Add(this.dgvConsultar);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(278, 53);
+            this.groupBox1.Location = new System.Drawing.Point(371, 65);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(788, 380);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Size = new System.Drawing.Size(1051, 468);
             this.groupBox1.TabIndex = 13;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Usuarios";
@@ -76,13 +79,14 @@ namespace farmatown.Vistas
             this.Nombre,
             this.Apellido,
             this.TipoDeUsuario});
-            this.dgvConsultar.Location = new System.Drawing.Point(16, 36);
+            this.dgvConsultar.Location = new System.Drawing.Point(21, 44);
+            this.dgvConsultar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgvConsultar.Name = "dgvConsultar";
             this.dgvConsultar.ReadOnly = true;
             this.dgvConsultar.RowHeadersVisible = false;
             this.dgvConsultar.RowHeadersWidth = 62;
             this.dgvConsultar.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvConsultar.Size = new System.Drawing.Size(755, 315);
+            this.dgvConsultar.Size = new System.Drawing.Size(1007, 388);
             this.dgvConsultar.TabIndex = 22;
             this.dgvConsultar.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvConsultar_CellContentClick);
             // 
@@ -134,9 +138,11 @@ namespace farmatown.Vistas
             this.groupBox2.Controls.Add(this.txtUsuario);
             this.groupBox2.Controls.Add(this.lblNombre);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(669, 450);
+            this.groupBox2.Location = new System.Drawing.Point(683, 562);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(398, 311);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Size = new System.Drawing.Size(531, 383);
             this.groupBox2.TabIndex = 14;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Nuevo usuario";
@@ -147,18 +153,20 @@ namespace farmatown.Vistas
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(52, 211);
+            this.label2.Location = new System.Drawing.Point(69, 260);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(106, 19);
+            this.label2.Size = new System.Drawing.Size(141, 23);
             this.label2.TabIndex = 22;
             this.label2.Text = "Tipo de usuario:";
             // 
             // cboTipoUsuario
             // 
             this.cboTipoUsuario.FormattingEnabled = true;
-            this.cboTipoUsuario.Location = new System.Drawing.Point(176, 208);
+            this.cboTipoUsuario.Location = new System.Drawing.Point(235, 256);
+            this.cboTipoUsuario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cboTipoUsuario.Name = "cboTipoUsuario";
-            this.cboTipoUsuario.Size = new System.Drawing.Size(163, 27);
+            this.cboTipoUsuario.Size = new System.Drawing.Size(216, 29);
             this.cboTipoUsuario.TabIndex = 21;
             // 
             // btnRegistrar
@@ -166,9 +174,10 @@ namespace farmatown.Vistas
             this.btnRegistrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRegistrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegistrar.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.btnRegistrar.Location = new System.Drawing.Point(200, 243);
+            this.btnRegistrar.Location = new System.Drawing.Point(267, 299);
+            this.btnRegistrar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnRegistrar.Name = "btnRegistrar";
-            this.btnRegistrar.Size = new System.Drawing.Size(121, 29);
+            this.btnRegistrar.Size = new System.Drawing.Size(161, 36);
             this.btnRegistrar.TabIndex = 20;
             this.btnRegistrar.Text = "Registrar";
             this.btnRegistrar.UseVisualStyleBackColor = true;
@@ -176,16 +185,18 @@ namespace farmatown.Vistas
             // 
             // txtApellido
             // 
-            this.txtApellido.Location = new System.Drawing.Point(176, 168);
+            this.txtApellido.Location = new System.Drawing.Point(235, 207);
+            this.txtApellido.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtApellido.Name = "txtApellido";
-            this.txtApellido.Size = new System.Drawing.Size(163, 25);
+            this.txtApellido.Size = new System.Drawing.Size(216, 29);
             this.txtApellido.TabIndex = 16;
             // 
             // txtContraseña
             // 
-            this.txtContraseña.Location = new System.Drawing.Point(176, 89);
+            this.txtContraseña.Location = new System.Drawing.Point(235, 110);
+            this.txtContraseña.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtContraseña.Name = "txtContraseña";
-            this.txtContraseña.Size = new System.Drawing.Size(163, 25);
+            this.txtContraseña.Size = new System.Drawing.Size(216, 29);
             this.txtContraseña.TabIndex = 17;
             // 
             // lblContrasenia
@@ -194,17 +205,19 @@ namespace farmatown.Vistas
             this.lblContrasenia.BackColor = System.Drawing.Color.Transparent;
             this.lblContrasenia.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblContrasenia.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblContrasenia.Location = new System.Drawing.Point(93, 170);
+            this.lblContrasenia.Location = new System.Drawing.Point(124, 209);
+            this.lblContrasenia.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblContrasenia.Name = "lblContrasenia";
-            this.lblContrasenia.Size = new System.Drawing.Size(65, 19);
+            this.lblContrasenia.Size = new System.Drawing.Size(89, 23);
             this.lblContrasenia.TabIndex = 12;
             this.lblContrasenia.Text = "Apellido: ";
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(176, 129);
+            this.txtNombre.Location = new System.Drawing.Point(235, 159);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(163, 25);
+            this.txtNombre.Size = new System.Drawing.Size(216, 29);
             this.txtNombre.TabIndex = 18;
             // 
             // lblApellido
@@ -213,9 +226,10 @@ namespace farmatown.Vistas
             this.lblApellido.BackColor = System.Drawing.Color.Transparent;
             this.lblApellido.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblApellido.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblApellido.Location = new System.Drawing.Point(72, 89);
+            this.lblApellido.Location = new System.Drawing.Point(96, 110);
+            this.lblApellido.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblApellido.Name = "lblApellido";
-            this.lblApellido.Size = new System.Drawing.Size(86, 19);
+            this.lblApellido.Size = new System.Drawing.Size(109, 23);
             this.lblApellido.TabIndex = 13;
             this.lblApellido.Text = "Contraseña: ";
             // 
@@ -225,17 +239,19 @@ namespace farmatown.Vistas
             this.lblUsuario.BackColor = System.Drawing.Color.Transparent;
             this.lblUsuario.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUsuario.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblUsuario.Location = new System.Drawing.Point(91, 129);
+            this.lblUsuario.Location = new System.Drawing.Point(121, 159);
+            this.lblUsuario.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(67, 19);
+            this.lblUsuario.Size = new System.Drawing.Size(87, 23);
             this.lblUsuario.TabIndex = 14;
             this.lblUsuario.Text = "Nombre: ";
             // 
             // txtUsuario
             // 
-            this.txtUsuario.Location = new System.Drawing.Point(176, 49);
+            this.txtUsuario.Location = new System.Drawing.Point(235, 60);
+            this.txtUsuario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(163, 25);
+            this.txtUsuario.Size = new System.Drawing.Size(216, 29);
             this.txtUsuario.TabIndex = 19;
             // 
             // lblNombre
@@ -244,9 +260,10 @@ namespace farmatown.Vistas
             this.lblNombre.BackColor = System.Drawing.Color.Transparent;
             this.lblNombre.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNombre.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblNombre.Location = new System.Drawing.Point(95, 49);
+            this.lblNombre.Location = new System.Drawing.Point(127, 60);
+            this.lblNombre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(63, 19);
+            this.lblNombre.Size = new System.Drawing.Size(81, 23);
             this.lblNombre.TabIndex = 15;
             this.lblNombre.Text = "Usuario: ";
             // 
@@ -255,23 +272,26 @@ namespace farmatown.Vistas
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.White;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(639, 21);
+            this.label1.Location = new System.Drawing.Point(852, 26);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(91, 21);
+            this.label1.Size = new System.Drawing.Size(115, 27);
             this.label1.TabIndex = 15;
             this.label1.Text = "USUARIOS";
             // 
             // FrmNuevoUsuario
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::farmatown.Properties.Resources.fondoBlanco2;
-            this.ClientSize = new System.Drawing.Size(926, 778);
+            this.ClientSize = new System.Drawing.Size(1479, 958);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FrmNuevoUsuario";
-            this.Text = "FrmAltaUsuario";
+            this.Text = "Alta de Usuario";
             this.Load += new System.EventHandler(this.FrmNuevoUsuario_Load);
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvConsultar)).EndInit();

@@ -33,12 +33,13 @@ namespace farmatown.Vistas
             // 
             // FrmNuevoLote
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::farmatown.Properties.Resources.fondoBlanco2;
-            this.ClientSize = new System.Drawing.Size(1502, 866);
+            this.ClientSize = new System.Drawing.Size(1924, 1055);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FrmNuevoLote";
-            this.Text = "FrmNuevoLote";
+            this.Text = "NuevoLote";
             this.ResumeLayout(false);
 
         }

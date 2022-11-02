@@ -35,13 +35,13 @@ namespace farmatown.Vistas
             this.btnEliminarFiltro = new System.Windows.Forms.Button();
             this.btnFiltrar = new System.Windows.Forms.Button();
             this.dgvConsultar = new System.Windows.Forms.DataGridView();
-            this.label2 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.cNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cApellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cDni = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColTelefono = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColModificar = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.label2 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvConsultar)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -54,7 +54,7 @@ namespace farmatown.Vistas
             this.label1.Location = new System.Drawing.Point(49, 47);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(34, 19);
+            this.label1.Size = new System.Drawing.Size(42, 23);
             this.label1.TabIndex = 32;
             this.label1.Text = "DNI";
             // 
@@ -64,7 +64,7 @@ namespace farmatown.Vistas
             this.txtDni.Location = new System.Drawing.Point(102, 41);
             this.txtDni.Margin = new System.Windows.Forms.Padding(4);
             this.txtDni.Name = "txtDni";
-            this.txtDni.Size = new System.Drawing.Size(260, 25);
+            this.txtDni.Size = new System.Drawing.Size(260, 29);
             this.txtDni.TabIndex = 31;
             // 
             // btnEliminarFiltro
@@ -110,7 +110,6 @@ namespace farmatown.Vistas
             this.cDni,
             this.ColTelefono,
             this.ColModificar});
-            this.dgvConsultar.GridColor = System.Drawing.Color.White;
             this.dgvConsultar.Location = new System.Drawing.Point(53, 82);
             this.dgvConsultar.Margin = new System.Windows.Forms.Padding(4);
             this.dgvConsultar.Name = "dgvConsultar";
@@ -121,33 +120,6 @@ namespace farmatown.Vistas
             this.dgvConsultar.Size = new System.Drawing.Size(880, 596);
             this.dgvConsultar.TabIndex = 27;
             this.dgvConsultar.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvConsultar_CellContentClick);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.White;
-            this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(579, 23);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(83, 21);
-            this.label2.TabIndex = 33;
-            this.label2.Text = "CLIENTES";
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.BackgroundImage = global::farmatown.Properties.Resources.fondoCeleste;
-            this.groupBox1.Controls.Add(this.btnFiltrar);
-            this.groupBox1.Controls.Add(this.dgvConsultar);
-            this.groupBox1.Controls.Add(this.btnEliminarFiltro);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.txtDni);
-            this.groupBox1.Location = new System.Drawing.Point(155, 64);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(987, 725);
-            this.groupBox1.TabIndex = 34;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Datos de los clientes";
             // 
             // cNombre
             // 
@@ -177,6 +149,7 @@ namespace farmatown.Vistas
             // ColTelefono
             // 
             this.ColTelefono.HeaderText = "Teléfono";
+            this.ColTelefono.MinimumWidth = 6;
             this.ColTelefono.Name = "ColTelefono";
             this.ColTelefono.ReadOnly = true;
             this.ColTelefono.Width = 170;
@@ -185,15 +158,43 @@ namespace farmatown.Vistas
             // 
             this.ColModificar.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.ColModificar.HeaderText = "Modificar";
+            this.ColModificar.MinimumWidth = 6;
             this.ColModificar.Name = "ColModificar";
             this.ColModificar.ReadOnly = true;
             this.ColModificar.Text = "Modificar";
             this.ColModificar.ToolTipText = "Modificar";
             this.ColModificar.UseColumnTextForButtonValue = true;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.White;
+            this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(579, 23);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(102, 27);
+            this.label2.TabIndex = 33;
+            this.label2.Text = "CLIENTES";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.BackgroundImage = global::farmatown.Properties.Resources.fondoCeleste;
+            this.groupBox1.Controls.Add(this.btnFiltrar);
+            this.groupBox1.Controls.Add(this.dgvConsultar);
+            this.groupBox1.Controls.Add(this.btnEliminarFiltro);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.txtDni);
+            this.groupBox1.Location = new System.Drawing.Point(155, 64);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(987, 725);
+            this.groupBox1.TabIndex = 34;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Datos de los clientes";
+            // 
             // FrmClientes
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::farmatown.Properties.Resources.fondoBlanco2;
             this.ClientSize = new System.Drawing.Size(1177, 864);

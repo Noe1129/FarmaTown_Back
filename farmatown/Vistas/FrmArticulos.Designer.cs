@@ -29,6 +29,7 @@ namespace farmatown.Vistas
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmArticulos));
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label9 = new System.Windows.Forms.Label();
@@ -74,9 +75,10 @@ namespace farmatown.Vistas
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.White;
             this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(609, 23);
+            this.label2.Location = new System.Drawing.Point(812, 28);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(98, 21);
+            this.label2.Size = new System.Drawing.Size(122, 27);
             this.label2.TabIndex = 45;
             this.label2.Text = "ARTÍCULOS";
             // 
@@ -93,9 +95,11 @@ namespace farmatown.Vistas
             this.groupBox1.Controls.Add(this.dgvConsultar);
             this.groupBox1.Cursor = System.Windows.Forms.Cursors.Default;
             this.groupBox1.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(125, 54);
+            this.groupBox1.Location = new System.Drawing.Point(167, 66);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1054, 395);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Size = new System.Drawing.Size(1405, 486);
             this.groupBox1.TabIndex = 46;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Listado";
@@ -104,26 +108,29 @@ namespace farmatown.Vistas
             // 
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Location = new System.Drawing.Point(553, 29);
+            this.label9.Location = new System.Drawing.Point(737, 36);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(50, 19);
+            this.label9.Size = new System.Drawing.Size(64, 23);
             this.label9.TabIndex = 52;
             this.label9.Text = "Droga:";
             // 
             // txtDroga
             // 
-            this.txtDroga.Location = new System.Drawing.Point(608, 26);
+            this.txtDroga.Location = new System.Drawing.Point(811, 32);
+            this.txtDroga.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtDroga.Name = "txtDroga";
-            this.txtDroga.Size = new System.Drawing.Size(196, 25);
+            this.txtDroga.Size = new System.Drawing.Size(260, 29);
             this.txtDroga.TabIndex = 51;
             // 
             // btnFiltrarDroga
             // 
             this.btnFiltrarDroga.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFiltrarDroga.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.btnFiltrarDroga.Location = new System.Drawing.Point(821, 20);
+            this.btnFiltrarDroga.Location = new System.Drawing.Point(1095, 25);
+            this.btnFiltrarDroga.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnFiltrarDroga.Name = "btnFiltrarDroga";
-            this.btnFiltrarDroga.Size = new System.Drawing.Size(112, 31);
+            this.btnFiltrarDroga.Size = new System.Drawing.Size(149, 38);
             this.btnFiltrarDroga.TabIndex = 50;
             this.btnFiltrarDroga.Text = "Filtrar por droga";
             this.btnFiltrarDroga.UseVisualStyleBackColor = true;
@@ -134,17 +141,19 @@ namespace farmatown.Vistas
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(21, 29);
+            this.label1.Location = new System.Drawing.Point(28, 36);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(57, 19);
+            this.label1.Size = new System.Drawing.Size(74, 23);
             this.label1.TabIndex = 49;
             this.label1.Text = "Artículo";
             // 
             // txtProducto
             // 
-            this.txtProducto.Location = new System.Drawing.Point(84, 26);
+            this.txtProducto.Location = new System.Drawing.Point(112, 32);
+            this.txtProducto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtProducto.Name = "txtProducto";
-            this.txtProducto.Size = new System.Drawing.Size(196, 25);
+            this.txtProducto.Size = new System.Drawing.Size(260, 29);
             this.txtProducto.TabIndex = 48;
             // 
             // btnEliminarFiltro
@@ -152,9 +161,10 @@ namespace farmatown.Vistas
             this.btnEliminarFiltro.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEliminarFiltro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEliminarFiltro.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.btnEliminarFiltro.Location = new System.Drawing.Point(918, 309);
+            this.btnEliminarFiltro.Location = new System.Drawing.Point(1224, 380);
+            this.btnEliminarFiltro.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnEliminarFiltro.Name = "btnEliminarFiltro";
-            this.btnEliminarFiltro.Size = new System.Drawing.Size(112, 34);
+            this.btnEliminarFiltro.Size = new System.Drawing.Size(149, 42);
             this.btnEliminarFiltro.TabIndex = 47;
             this.btnEliminarFiltro.Text = "Eliminar Filtro";
             this.btnEliminarFiltro.UseVisualStyleBackColor = true;
@@ -166,9 +176,10 @@ namespace farmatown.Vistas
             this.btnFiltrarNombre.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFiltrarNombre.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFiltrarNombre.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.btnFiltrarNombre.Location = new System.Drawing.Point(294, 20);
+            this.btnFiltrarNombre.Location = new System.Drawing.Point(392, 25);
+            this.btnFiltrarNombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnFiltrarNombre.Name = "btnFiltrarNombre";
-            this.btnFiltrarNombre.Size = new System.Drawing.Size(112, 31);
+            this.btnFiltrarNombre.Size = new System.Drawing.Size(149, 38);
             this.btnFiltrarNombre.TabIndex = 46;
             this.btnFiltrarNombre.Text = "Filtrar por nombre";
             this.btnFiltrarNombre.UseVisualStyleBackColor = true;
@@ -193,13 +204,14 @@ namespace farmatown.Vistas
             this.ColPrecio,
             this.ColStock,
             this.ColModificar});
-            this.dgvConsultar.Location = new System.Drawing.Point(21, 63);
+            this.dgvConsultar.Location = new System.Drawing.Point(28, 78);
+            this.dgvConsultar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgvConsultar.Name = "dgvConsultar";
             this.dgvConsultar.ReadOnly = true;
             this.dgvConsultar.RowHeadersVisible = false;
             this.dgvConsultar.RowHeadersWidth = 62;
             this.dgvConsultar.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvConsultar.Size = new System.Drawing.Size(1009, 219);
+            this.dgvConsultar.Size = new System.Drawing.Size(1345, 270);
             this.dgvConsultar.TabIndex = 45;
             this.dgvConsultar.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvConsultar_CellContentClick);
             // 
@@ -223,6 +235,7 @@ namespace farmatown.Vistas
             // cIdTipoArticulo
             // 
             this.cIdTipoArticulo.HeaderText = "IdTipoArticulo";
+            this.cIdTipoArticulo.MinimumWidth = 6;
             this.cIdTipoArticulo.Name = "cIdTipoArticulo";
             this.cIdTipoArticulo.ReadOnly = true;
             this.cIdTipoArticulo.Visible = false;
@@ -231,6 +244,7 @@ namespace farmatown.Vistas
             // ColTipoArt
             // 
             this.ColTipoArt.HeaderText = "Tipo de artículo";
+            this.ColTipoArt.MinimumWidth = 6;
             this.ColTipoArt.Name = "ColTipoArt";
             this.ColTipoArt.ReadOnly = true;
             this.ColTipoArt.Width = 120;
@@ -238,6 +252,7 @@ namespace farmatown.Vistas
             // idDroga
             // 
             this.idDroga.HeaderText = "id droga";
+            this.idDroga.MinimumWidth = 6;
             this.idDroga.Name = "idDroga";
             this.idDroga.ReadOnly = true;
             this.idDroga.Visible = false;
@@ -246,19 +261,24 @@ namespace farmatown.Vistas
             // nombreDroga
             // 
             this.nombreDroga.HeaderText = "Droga";
+            this.nombreDroga.MinimumWidth = 6;
             this.nombreDroga.Name = "nombreDroga";
             this.nombreDroga.ReadOnly = true;
+            this.nombreDroga.Width = 125;
             // 
             // idLab
             // 
             this.idLab.HeaderText = "id laboratorio";
+            this.idLab.MinimumWidth = 6;
             this.idLab.Name = "idLab";
             this.idLab.ReadOnly = true;
             this.idLab.Visible = false;
+            this.idLab.Width = 125;
             // 
             // nomLab
             // 
             this.nomLab.HeaderText = "Laboratorio";
+            this.nomLab.MinimumWidth = 6;
             this.nomLab.Name = "nomLab";
             this.nomLab.ReadOnly = true;
             this.nomLab.Width = 250;
@@ -274,6 +294,7 @@ namespace farmatown.Vistas
             // ColStock
             // 
             this.ColStock.HeaderText = "Stock";
+            this.ColStock.MinimumWidth = 6;
             this.ColStock.Name = "ColStock";
             this.ColStock.ReadOnly = true;
             this.ColStock.Width = 90;
@@ -282,6 +303,7 @@ namespace farmatown.Vistas
             // 
             this.ColModificar.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.ColModificar.HeaderText = "Modificar";
+            this.ColModificar.MinimumWidth = 6;
             this.ColModificar.Name = "ColModificar";
             this.ColModificar.ReadOnly = true;
             this.ColModificar.Text = "Modificar";
@@ -305,9 +327,11 @@ namespace farmatown.Vistas
             this.groupBox2.Controls.Add(this.txtNombre);
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(376, 472);
+            this.groupBox2.Location = new System.Drawing.Point(501, 581);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(584, 296);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Size = new System.Drawing.Size(779, 364);
             this.groupBox2.TabIndex = 47;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Nuevo artículo";
@@ -316,26 +340,29 @@ namespace farmatown.Vistas
             // cboLaboratorio
             // 
             this.cboLaboratorio.FormattingEnabled = true;
-            this.cboLaboratorio.Location = new System.Drawing.Point(244, 172);
+            this.cboLaboratorio.Location = new System.Drawing.Point(325, 212);
+            this.cboLaboratorio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cboLaboratorio.Name = "cboLaboratorio";
-            this.cboLaboratorio.Size = new System.Drawing.Size(198, 27);
+            this.cboLaboratorio.Size = new System.Drawing.Size(263, 29);
             this.cboLaboratorio.TabIndex = 12;
             // 
             // cboDroga
             // 
             this.cboDroga.FormattingEnabled = true;
-            this.cboDroga.Location = new System.Drawing.Point(244, 140);
+            this.cboDroga.Location = new System.Drawing.Point(325, 172);
+            this.cboDroga.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cboDroga.Name = "cboDroga";
-            this.cboDroga.Size = new System.Drawing.Size(198, 27);
+            this.cboDroga.Size = new System.Drawing.Size(263, 29);
             this.cboDroga.TabIndex = 11;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Location = new System.Drawing.Point(186, 140);
+            this.label8.Location = new System.Drawing.Point(248, 172);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(50, 19);
+            this.label8.Size = new System.Drawing.Size(64, 23);
             this.label8.TabIndex = 10;
             this.label8.Text = "Droga:";
             // 
@@ -343,43 +370,48 @@ namespace farmatown.Vistas
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Location = new System.Drawing.Point(153, 175);
+            this.label7.Location = new System.Drawing.Point(204, 215);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(83, 19);
+            this.label7.Size = new System.Drawing.Size(108, 23);
             this.label7.TabIndex = 9;
             this.label7.Text = "Laboratorio:";
             // 
             // txtPrecio
             // 
-            this.txtPrecio.Location = new System.Drawing.Point(244, 72);
+            this.txtPrecio.Location = new System.Drawing.Point(325, 89);
+            this.txtPrecio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtPrecio.Name = "txtPrecio";
-            this.txtPrecio.Size = new System.Drawing.Size(198, 25);
+            this.txtPrecio.Size = new System.Drawing.Size(263, 29);
             this.txtPrecio.TabIndex = 8;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Location = new System.Drawing.Point(111, 78);
+            this.label6.Location = new System.Drawing.Point(148, 96);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(125, 19);
+            this.label6.Size = new System.Drawing.Size(164, 23);
             this.label6.TabIndex = 7;
             this.label6.Text = "Precio por unidad: ";
             // 
             // txtStockInicial
             // 
-            this.txtStockInicial.Location = new System.Drawing.Point(244, 203);
+            this.txtStockInicial.Location = new System.Drawing.Point(325, 250);
+            this.txtStockInicial.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtStockInicial.Name = "txtStockInicial";
-            this.txtStockInicial.Size = new System.Drawing.Size(198, 25);
+            this.txtStockInicial.Size = new System.Drawing.Size(263, 29);
             this.txtStockInicial.TabIndex = 6;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Location = new System.Drawing.Point(147, 206);
+            this.label5.Location = new System.Drawing.Point(196, 254);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(89, 19);
+            this.label5.Size = new System.Drawing.Size(117, 23);
             this.label5.TabIndex = 5;
             this.label5.Text = "Stock inicial: ";
             // 
@@ -387,18 +419,20 @@ namespace farmatown.Vistas
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Location = new System.Drawing.Point(125, 108);
+            this.label4.Location = new System.Drawing.Point(167, 133);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(111, 19);
+            this.label4.Size = new System.Drawing.Size(148, 23);
             this.label4.TabIndex = 4;
             this.label4.Text = "Tipo de artículo: ";
             // 
             // cboTipoArticulo
             // 
             this.cboTipoArticulo.FormattingEnabled = true;
-            this.cboTipoArticulo.Location = new System.Drawing.Point(244, 105);
+            this.cboTipoArticulo.Location = new System.Drawing.Point(325, 129);
+            this.cboTipoArticulo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cboTipoArticulo.Name = "cboTipoArticulo";
-            this.cboTipoArticulo.Size = new System.Drawing.Size(198, 27);
+            this.cboTipoArticulo.Size = new System.Drawing.Size(263, 29);
             this.cboTipoArticulo.TabIndex = 3;
             // 
             // btnCrearArticulo
@@ -407,9 +441,10 @@ namespace farmatown.Vistas
             this.btnCrearArticulo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCrearArticulo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCrearArticulo.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.btnCrearArticulo.Location = new System.Drawing.Point(342, 244);
+            this.btnCrearArticulo.Location = new System.Drawing.Point(456, 300);
+            this.btnCrearArticulo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCrearArticulo.Name = "btnCrearArticulo";
-            this.btnCrearArticulo.Size = new System.Drawing.Size(100, 30);
+            this.btnCrearArticulo.Size = new System.Drawing.Size(133, 37);
             this.btnCrearArticulo.TabIndex = 2;
             this.btnCrearArticulo.Text = "Crear articulo";
             this.btnCrearArticulo.UseVisualStyleBackColor = false;
@@ -417,33 +452,37 @@ namespace farmatown.Vistas
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(244, 42);
+            this.txtNombre.Location = new System.Drawing.Point(325, 52);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(198, 25);
+            this.txtNombre.Size = new System.Drawing.Size(263, 29);
             this.txtNombre.TabIndex = 1;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Location = new System.Drawing.Point(169, 45);
+            this.label3.Location = new System.Drawing.Point(225, 55);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(67, 19);
+            this.label3.Size = new System.Drawing.Size(87, 23);
             this.label3.TabIndex = 0;
             this.label3.Text = "Nombre: ";
             // 
             // FrmArticulos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::farmatown.Properties.Resources.fondoBlanco2;
-            this.ClientSize = new System.Drawing.Size(1084, 793);
+            this.ClientSize = new System.Drawing.Size(1445, 976);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Location = new System.Drawing.Point(504, 154);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FrmArticulos";
-            this.Text = "FrmArticulos";
+            this.Text = "Artículos";
             this.Load += new System.EventHandler(this.FrmArticulos_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

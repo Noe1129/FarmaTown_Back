@@ -30,21 +30,18 @@ namespace farmatown.Vistas
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmReportes));
             this.facturasObraSocialBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dataVistaBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            
             this.articulosMasVendidosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.farmatown3DataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.articulosVendidosBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.clientesfrecuentesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.articulosVendidosBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            
             this.clientes_frecuentesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            
             this.clientesfrecuentesBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.dataVistaBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            
             this.farmatown3DataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -67,7 +64,6 @@ namespace farmatown.Vistas
             this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.facturasObraSocialBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataVistaBindingSource)).BeginInit();
-            
             ((System.ComponentModel.ISupportInitialize)(this.articulosMasVendidosBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.farmatown3DataSet1BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.articulosVendidosBindingSource1)).BeginInit();
@@ -76,7 +72,6 @@ namespace farmatown.Vistas
             ((System.ComponentModel.ISupportInitialize)(this.clientes_frecuentesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientesfrecuentesBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataVistaBindingSource1)).BeginInit();
-            
             ((System.ComponentModel.ISupportInitialize)(this.farmatown3DataSetBindingSource)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -94,12 +89,6 @@ namespace farmatown.Vistas
             this.facturasObraSocialBindingSource.DataMember = "facturasObraSocial";
             this.facturasObraSocialBindingSource.DataSource = this.dataVistaBindingSource;
             // 
-            // dataVistaBindingSource
-            // 
-            
-            this.dataVistaBindingSource.Position = 0;
-            
-            // 
             // articulosMasVendidosBindingSource
             // 
             this.articulosMasVendidosBindingSource.DataMember = "articulosMasVendidos";
@@ -115,7 +104,7 @@ namespace farmatown.Vistas
             this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "farmatown.Reporte.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(4, 4);
-            this.reportViewer1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.reportViewer1.Margin = new System.Windows.Forms.Padding(4);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.ServerReport.BearerToken = null;
             this.reportViewer1.Size = new System.Drawing.Size(1285, 580);
@@ -125,48 +114,18 @@ namespace farmatown.Vistas
             // clientesfrecuentesBindingSource
             // 
             this.clientesfrecuentesBindingSource.DataMember = "clientes_frecuentes";
-            
             // 
             // articulosVendidosBindingSource
             // 
             this.articulosVendidosBindingSource.DataMember = "articulosVendidos";
-            
-            // 
-            // articulosVendidosTableAdapter
-            // 
-            
             // 
             // clientes_frecuentesBindingSource
             // 
             this.clientes_frecuentesBindingSource.DataMember = "clientes_frecuentes";
-            
-            // 
-            // clientes_frecuentesTableAdapter
-            // 
-            
             // 
             // clientesfrecuentesBindingSource1
             // 
             this.clientesfrecuentesBindingSource1.DataMember = "clientes_frecuentes";
-            
-            // 
-            // dataVistaBindingSource1
-            // 
-            
-            this.dataVistaBindingSource1.Position = 0;
-            // 
-            // facturasObraSocialTableAdapter
-            // 
-            
-            // 
-            // farmatown3DataSet
-            // 
-           
-            // 
-            // farmatown3DataSetBindingSource
-            // 
-            
-            this.farmatown3DataSetBindingSource.Position = 0;
             // 
             // tabControl1
             // 
@@ -176,7 +135,7 @@ namespace farmatown.Vistas
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(4);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(1301, 622);
@@ -186,9 +145,9 @@ namespace farmatown.Vistas
             // 
             this.tabPage1.Controls.Add(this.reportViewer1);
             this.tabPage1.Location = new System.Drawing.Point(4, 30);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(4);
             this.tabPage1.Size = new System.Drawing.Size(1293, 588);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Ventas según Obra Social";
@@ -200,9 +159,9 @@ namespace farmatown.Vistas
             this.tabPage2.Controls.Add(this.groupBox3);
             this.tabPage2.Controls.Add(this.label1);
             this.tabPage2.Location = new System.Drawing.Point(4, 30);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(4);
             this.tabPage2.Size = new System.Drawing.Size(1293, 588);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Artículos más vendidos";
@@ -215,9 +174,9 @@ namespace farmatown.Vistas
             this.groupBox3.Controls.Add(this.groupBox1);
             this.groupBox3.Controls.Add(this.btnAceptar);
             this.groupBox3.Location = new System.Drawing.Point(240, 91);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox3.Size = new System.Drawing.Size(1111, 484);
             this.groupBox3.TabIndex = 6;
             this.groupBox3.TabStop = false;
@@ -237,7 +196,7 @@ namespace farmatown.Vistas
             this.mes,
             this.anio});
             this.dgvArticulos.Location = new System.Drawing.Point(219, 94);
-            this.dgvArticulos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvArticulos.Margin = new System.Windows.Forms.Padding(4);
             this.dgvArticulos.Name = "dgvArticulos";
             this.dgvArticulos.ReadOnly = true;
             this.dgvArticulos.RowHeadersWidth = 51;
@@ -280,9 +239,9 @@ namespace farmatown.Vistas
             // 
             this.groupBox1.Controls.Add(this.cboMes);
             this.groupBox1.Location = new System.Drawing.Point(207, 26);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(245, 60);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
@@ -305,7 +264,7 @@ namespace farmatown.Vistas
             "Noviembre",
             "Diciembre"});
             this.cboMes.Location = new System.Drawing.Point(8, 26);
-            this.cboMes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cboMes.Margin = new System.Windows.Forms.Padding(4);
             this.cboMes.Name = "cboMes";
             this.cboMes.Size = new System.Drawing.Size(224, 29);
             this.cboMes.TabIndex = 0;
@@ -317,7 +276,7 @@ namespace farmatown.Vistas
             this.btnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAceptar.ForeColor = System.Drawing.SystemColors.Highlight;
             this.btnAceptar.Location = new System.Drawing.Point(460, 52);
-            this.btnAceptar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAceptar.Margin = new System.Windows.Forms.Padding(4);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(100, 36);
             this.btnAceptar.TabIndex = 1;
@@ -343,9 +302,9 @@ namespace farmatown.Vistas
             this.tpClientes.Controls.Add(this.groupBox2);
             this.tpClientes.Controls.Add(this.label2);
             this.tpClientes.Location = new System.Drawing.Point(4, 30);
-            this.tpClientes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tpClientes.Margin = new System.Windows.Forms.Padding(4);
             this.tpClientes.Name = "tpClientes";
-            this.tpClientes.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tpClientes.Padding = new System.Windows.Forms.Padding(4);
             this.tpClientes.Size = new System.Drawing.Size(1293, 588);
             this.tpClientes.TabIndex = 2;
             this.tpClientes.Text = "Clientes frecuentes";
@@ -357,9 +316,9 @@ namespace farmatown.Vistas
             this.groupBox2.Controls.Add(this.dgvClientes);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(400, 91);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox2.Size = new System.Drawing.Size(880, 482);
             this.groupBox2.TabIndex = 8;
             this.groupBox2.TabStop = false;
@@ -376,8 +335,8 @@ namespace farmatown.Vistas
             this.dgvClientes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.nombre,
             this.ventas});
-            this.dgvClientes.Location = new System.Drawing.Point(193, 25);
-            this.dgvClientes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvClientes.Location = new System.Drawing.Point(197, 43);
+            this.dgvClientes.Margin = new System.Windows.Forms.Padding(4);
             this.dgvClientes.Name = "dgvClientes";
             this.dgvClientes.ReadOnly = true;
             this.dgvClientes.RowHeadersWidth = 51;
@@ -418,13 +377,13 @@ namespace farmatown.Vistas
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1301, 622);
             this.Controls.Add(this.tabControl1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FrmReportes";
-            this.Text = "FromReportes";
+            this.Text = "Reportes";
             this.Load += new System.EventHandler(this.FrmReportes_Load);
             ((System.ComponentModel.ISupportInitialize)(this.facturasObraSocialBindingSource)).EndInit();
-            
-            
+            ((System.ComponentModel.ISupportInitialize)(this.dataVistaBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.articulosMasVendidosBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.farmatown3DataSet1BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.articulosVendidosBindingSource1)).EndInit();
@@ -433,7 +392,6 @@ namespace farmatown.Vistas
             ((System.ComponentModel.ISupportInitialize)(this.clientes_frecuentesBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientesfrecuentesBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataVistaBindingSource1)).EndInit();
-            
             ((System.ComponentModel.ISupportInitialize)(this.farmatown3DataSetBindingSource)).EndInit();
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
