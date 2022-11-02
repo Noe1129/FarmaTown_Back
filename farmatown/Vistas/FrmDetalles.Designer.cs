@@ -29,6 +29,7 @@ namespace farmatown.Vistas
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmDetalles));
             this.btnCerrar = new System.Windows.Forms.Button();
             this.dgvDetalles = new System.Windows.Forms.DataGridView();
             this.idDetalle = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -52,7 +53,7 @@ namespace farmatown.Vistas
             this.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnCerrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCerrar.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.btnCerrar.Location = new System.Drawing.Point(623, 635);
+            this.btnCerrar.Location = new System.Drawing.Point(739, 635);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(161, 34);
             this.btnCerrar.TabIndex = 37;
@@ -144,7 +145,7 @@ namespace farmatown.Vistas
             this.lblNroFactura.AutoSize = true;
             this.lblNroFactura.BackColor = System.Drawing.Color.White;
             this.lblNroFactura.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNroFactura.Location = new System.Drawing.Point(16, 31);
+            this.lblNroFactura.Location = new System.Drawing.Point(13, 29);
             this.lblNroFactura.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNroFactura.Name = "lblNroFactura";
             this.lblNroFactura.Size = new System.Drawing.Size(300, 21);
@@ -172,10 +173,11 @@ namespace farmatown.Vistas
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.lblNroFactura);
             this.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmDetalles";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "FrmDetalles";
+            this.Text = "Detalles de Factura";
             this.Load += new System.EventHandler(this.FrmDetalles_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDetalles)).EndInit();
             this.groupBox1.ResumeLayout(false);

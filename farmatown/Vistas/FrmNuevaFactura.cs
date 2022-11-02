@@ -261,7 +261,7 @@ namespace farmatown.Vistas
             catch (Exception)
             {
 
-                MessageBox.Show("El campo dni debe ser un numero", "Control", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("El campo dni debe ser un número", "Control", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return false;
             }
         }
@@ -348,6 +348,10 @@ namespace farmatown.Vistas
                 gbTarjeta.Enabled = false;
             }
         }
-        
+
+        private void cboArticulos_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

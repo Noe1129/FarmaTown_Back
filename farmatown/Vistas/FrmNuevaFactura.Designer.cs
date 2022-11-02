@@ -41,6 +41,18 @@ namespace farmatown.Vistas
             this.lblTotal = new System.Windows.Forms.Label();
             this.cboArticulos = new System.Windows.Forms.ComboBox();
             this.dgvDetalles = new System.Windows.Forms.DataGridView();
+            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColArticulo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColTipoArt = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idDroga = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nombreDroga = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idLaboratorio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nombreLab = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColPrecio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColCantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colDescuento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColBorrar = new System.Windows.Forms.DataGridViewButtonColumn();
             this.lblFecha = new System.Windows.Forms.Label();
             this.lblNroFactura = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -64,26 +76,14 @@ namespace farmatown.Vistas
             this.txtDniFiltro = new System.Windows.Forms.TextBox();
             this.btnFiltrar = new System.Windows.Forms.Button();
             this.dgvConsultar = new System.Windows.Forms.DataGridView();
-            this.btnEliminarFiltro = new System.Windows.Forms.Button();
-            this.FechaVenc = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CodigoSeguridad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NroTarjeta = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColTelefono = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cDni = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cApellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColBorrar = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.ColTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colDescuento = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColCantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColPrecio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nombreLab = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idLaboratorio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nombreDroga = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idDroga = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColTipoArt = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColArticulo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cApellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cDni = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColTelefono = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NroTarjeta = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CodigoSeguridad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FechaVenc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnEliminarFiltro = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudCantidad)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDetalles)).BeginInit();
@@ -141,7 +141,7 @@ namespace farmatown.Vistas
             this.cBObraSocial.Location = new System.Drawing.Point(630, 106);
             this.cBObraSocial.Margin = new System.Windows.Forms.Padding(4);
             this.cBObraSocial.Name = "cBObraSocial";
-            this.cBObraSocial.Size = new System.Drawing.Size(173, 27);
+            this.cBObraSocial.Size = new System.Drawing.Size(132, 23);
             this.cBObraSocial.TabIndex = 60;
             this.cBObraSocial.Text = "Tiene obra Social";
             this.cBObraSocial.UseVisualStyleBackColor = false;
@@ -153,7 +153,7 @@ namespace farmatown.Vistas
             this.lblDescuento.Location = new System.Drawing.Point(823, 74);
             this.lblDescuento.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDescuento.Name = "lblDescuento";
-            this.lblDescuento.Size = new System.Drawing.Size(101, 23);
+            this.lblDescuento.Size = new System.Drawing.Size(78, 19);
             this.lblDescuento.TabIndex = 59;
             this.lblDescuento.Text = "Descuento:";
             // 
@@ -161,14 +161,14 @@ namespace farmatown.Vistas
             // 
             this.txtDescuento.Location = new System.Drawing.Point(825, 106);
             this.txtDescuento.Name = "txtDescuento";
-            this.txtDescuento.Size = new System.Drawing.Size(103, 29);
+            this.txtDescuento.Size = new System.Drawing.Size(103, 25);
             this.txtDescuento.TabIndex = 58;
             // 
             // nudCantidad
             // 
             this.nudCantidad.Location = new System.Drawing.Point(487, 104);
             this.nudCantidad.Name = "nudCantidad";
-            this.nudCantidad.Size = new System.Drawing.Size(106, 29);
+            this.nudCantidad.Size = new System.Drawing.Size(106, 25);
             this.nudCantidad.TabIndex = 57;
             // 
             // label10
@@ -178,7 +178,7 @@ namespace farmatown.Vistas
             this.label10.Location = new System.Drawing.Point(31, 74);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(78, 23);
+            this.label10.Size = new System.Drawing.Size(60, 19);
             this.label10.TabIndex = 56;
             this.label10.Text = "Artículo:";
             // 
@@ -189,7 +189,7 @@ namespace farmatown.Vistas
             this.label8.Location = new System.Drawing.Point(486, 74);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(86, 23);
+            this.label8.Size = new System.Drawing.Size(67, 19);
             this.label8.TabIndex = 51;
             this.label8.Text = "Cantidad:";
             // 
@@ -215,7 +215,7 @@ namespace farmatown.Vistas
             this.lblTotal.Location = new System.Drawing.Point(1047, 393);
             this.lblTotal.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTotal.Name = "lblTotal";
-            this.lblTotal.Size = new System.Drawing.Size(84, 24);
+            this.lblTotal.Size = new System.Drawing.Size(67, 19);
             this.lblTotal.TabIndex = 47;
             this.lblTotal.Text = "Total $ 0";
             // 
@@ -225,8 +225,9 @@ namespace farmatown.Vistas
             this.cboArticulos.Location = new System.Drawing.Point(32, 103);
             this.cboArticulos.Margin = new System.Windows.Forms.Padding(4);
             this.cboArticulos.Name = "cboArticulos";
-            this.cboArticulos.Size = new System.Drawing.Size(413, 29);
+            this.cboArticulos.Size = new System.Drawing.Size(413, 27);
             this.cboArticulos.TabIndex = 49;
+            this.cboArticulos.SelectedIndexChanged += new System.EventHandler(this.cboArticulos_SelectedIndexChanged);
             // 
             // dgvDetalles
             // 
@@ -257,6 +258,107 @@ namespace farmatown.Vistas
             this.dgvDetalles.TabIndex = 45;
             this.dgvDetalles.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDetalles_CellContentClick);
             // 
+            // Id
+            // 
+            this.Id.HeaderText = "ID";
+            this.Id.MinimumWidth = 6;
+            this.Id.Name = "Id";
+            this.Id.ReadOnly = true;
+            this.Id.Visible = false;
+            this.Id.Width = 90;
+            // 
+            // ColArticulo
+            // 
+            this.ColArticulo.HeaderText = "Articulo";
+            this.ColArticulo.MinimumWidth = 6;
+            this.ColArticulo.Name = "ColArticulo";
+            this.ColArticulo.ReadOnly = true;
+            this.ColArticulo.Width = 200;
+            // 
+            // ColTipoArt
+            // 
+            this.ColTipoArt.HeaderText = "Tipo de articulo";
+            this.ColTipoArt.MinimumWidth = 6;
+            this.ColTipoArt.Name = "ColTipoArt";
+            this.ColTipoArt.ReadOnly = true;
+            this.ColTipoArt.Width = 200;
+            // 
+            // idDroga
+            // 
+            this.idDroga.HeaderText = "idDroga";
+            this.idDroga.MinimumWidth = 6;
+            this.idDroga.Name = "idDroga";
+            this.idDroga.ReadOnly = true;
+            this.idDroga.Visible = false;
+            this.idDroga.Width = 125;
+            // 
+            // nombreDroga
+            // 
+            this.nombreDroga.HeaderText = "Droga";
+            this.nombreDroga.MinimumWidth = 6;
+            this.nombreDroga.Name = "nombreDroga";
+            this.nombreDroga.ReadOnly = true;
+            this.nombreDroga.Width = 125;
+            // 
+            // idLaboratorio
+            // 
+            this.idLaboratorio.HeaderText = "idLab";
+            this.idLaboratorio.MinimumWidth = 6;
+            this.idLaboratorio.Name = "idLaboratorio";
+            this.idLaboratorio.ReadOnly = true;
+            this.idLaboratorio.Visible = false;
+            this.idLaboratorio.Width = 125;
+            // 
+            // nombreLab
+            // 
+            this.nombreLab.HeaderText = "Laboratorio";
+            this.nombreLab.MinimumWidth = 6;
+            this.nombreLab.Name = "nombreLab";
+            this.nombreLab.ReadOnly = true;
+            this.nombreLab.Width = 120;
+            // 
+            // ColPrecio
+            // 
+            this.ColPrecio.HeaderText = "Precio";
+            this.ColPrecio.MinimumWidth = 6;
+            this.ColPrecio.Name = "ColPrecio";
+            this.ColPrecio.ReadOnly = true;
+            this.ColPrecio.Width = 70;
+            // 
+            // ColCantidad
+            // 
+            this.ColCantidad.HeaderText = "Cantidad";
+            this.ColCantidad.MinimumWidth = 6;
+            this.ColCantidad.Name = "ColCantidad";
+            this.ColCantidad.ReadOnly = true;
+            this.ColCantidad.Width = 125;
+            // 
+            // colDescuento
+            // 
+            this.colDescuento.HeaderText = "Descuento";
+            this.colDescuento.MinimumWidth = 6;
+            this.colDescuento.Name = "colDescuento";
+            this.colDescuento.ReadOnly = true;
+            this.colDescuento.Width = 125;
+            // 
+            // ColTotal
+            // 
+            this.ColTotal.HeaderText = "Total";
+            this.ColTotal.MinimumWidth = 6;
+            this.ColTotal.Name = "ColTotal";
+            this.ColTotal.ReadOnly = true;
+            this.ColTotal.Width = 85;
+            // 
+            // ColBorrar
+            // 
+            this.ColBorrar.HeaderText = "";
+            this.ColBorrar.MinimumWidth = 6;
+            this.ColBorrar.Name = "ColBorrar";
+            this.ColBorrar.ReadOnly = true;
+            this.ColBorrar.Text = "Quitar";
+            this.ColBorrar.UseColumnTextForButtonValue = true;
+            this.ColBorrar.Width = 120;
+            // 
             // lblFecha
             // 
             this.lblFecha.AutoSize = true;
@@ -264,7 +366,7 @@ namespace farmatown.Vistas
             this.lblFecha.Location = new System.Drawing.Point(991, 42);
             this.lblFecha.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblFecha.Name = "lblFecha";
-            this.lblFecha.Size = new System.Drawing.Size(66, 23);
+            this.lblFecha.Size = new System.Drawing.Size(52, 19);
             this.lblFecha.TabIndex = 33;
             this.lblFecha.Text = "Fecha: ";
             // 
@@ -276,7 +378,7 @@ namespace farmatown.Vistas
             this.lblNroFactura.Location = new System.Drawing.Point(91, 30);
             this.lblNroFactura.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNroFactura.Name = "lblNroFactura";
-            this.lblNroFactura.Size = new System.Drawing.Size(110, 24);
+            this.lblNroFactura.Size = new System.Drawing.Size(87, 19);
             this.lblNroFactura.TabIndex = 32;
             this.lblNroFactura.Text = "Factura Nº: ";
             // 
@@ -330,7 +432,7 @@ namespace farmatown.Vistas
             this.label6.Location = new System.Drawing.Point(23, 73);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(101, 46);
+            this.label6.Size = new System.Drawing.Size(76, 38);
             this.label6.TabIndex = 72;
             this.label6.Text = "Código de \r\nSeguridad:";
             // 
@@ -339,7 +441,7 @@ namespace farmatown.Vistas
             this.dtpFechaVto.Location = new System.Drawing.Point(373, 60);
             this.dtpFechaVto.Margin = new System.Windows.Forms.Padding(4);
             this.dtpFechaVto.Name = "dtpFechaVto";
-            this.dtpFechaVto.Size = new System.Drawing.Size(260, 29);
+            this.dtpFechaVto.Size = new System.Drawing.Size(260, 25);
             this.dtpFechaVto.TabIndex = 77;
             // 
             // label5
@@ -350,7 +452,7 @@ namespace farmatown.Vistas
             this.label5.Location = new System.Drawing.Point(371, 33);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(118, 23);
+            this.label5.Size = new System.Drawing.Size(91, 19);
             this.label5.TabIndex = 71;
             this.label5.Text = "Fecha de vto:";
             // 
@@ -359,7 +461,7 @@ namespace farmatown.Vistas
             this.txtCodigoSeguridad.Location = new System.Drawing.Point(139, 81);
             this.txtCodigoSeguridad.Margin = new System.Windows.Forms.Padding(4);
             this.txtCodigoSeguridad.Name = "txtCodigoSeguridad";
-            this.txtCodigoSeguridad.Size = new System.Drawing.Size(176, 29);
+            this.txtCodigoSeguridad.Size = new System.Drawing.Size(176, 25);
             this.txtCodigoSeguridad.TabIndex = 76;
             // 
             // label7
@@ -370,7 +472,7 @@ namespace farmatown.Vistas
             this.label7.Location = new System.Drawing.Point(10, 35);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(121, 23);
+            this.label7.Size = new System.Drawing.Size(92, 19);
             this.label7.TabIndex = 73;
             this.label7.Text = "N° de Tarjeta:";
             // 
@@ -379,7 +481,7 @@ namespace farmatown.Vistas
             this.txtNroTarjeta.Location = new System.Drawing.Point(139, 30);
             this.txtNroTarjeta.Margin = new System.Windows.Forms.Padding(4);
             this.txtNroTarjeta.Name = "txtNroTarjeta";
-            this.txtNroTarjeta.Size = new System.Drawing.Size(176, 29);
+            this.txtNroTarjeta.Size = new System.Drawing.Size(176, 25);
             this.txtNroTarjeta.TabIndex = 74;
             // 
             // chkTarjeta
@@ -389,7 +491,7 @@ namespace farmatown.Vistas
             this.chkTarjeta.Location = new System.Drawing.Point(457, 122);
             this.chkTarjeta.Margin = new System.Windows.Forms.Padding(4);
             this.chkTarjeta.Name = "chkTarjeta";
-            this.chkTarjeta.Size = new System.Drawing.Size(168, 27);
+            this.chkTarjeta.Size = new System.Drawing.Size(131, 23);
             this.chkTarjeta.TabIndex = 70;
             this.chkTarjeta.Text = "Pago con Tarjeta";
             this.chkTarjeta.UseVisualStyleBackColor = false;
@@ -400,7 +502,7 @@ namespace farmatown.Vistas
             this.txtTelefono.Location = new System.Drawing.Point(457, 29);
             this.txtTelefono.Margin = new System.Windows.Forms.Padding(4);
             this.txtTelefono.Name = "txtTelefono";
-            this.txtTelefono.Size = new System.Drawing.Size(176, 29);
+            this.txtTelefono.Size = new System.Drawing.Size(176, 25);
             this.txtTelefono.TabIndex = 69;
             // 
             // label1
@@ -410,7 +512,7 @@ namespace farmatown.Vistas
             this.label1.Location = new System.Drawing.Point(362, 32);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(87, 23);
+            this.label1.Size = new System.Drawing.Size(65, 19);
             this.label1.TabIndex = 68;
             this.label1.Text = "Teléfono:";
             // 
@@ -419,7 +521,7 @@ namespace farmatown.Vistas
             this.txtDni.Location = new System.Drawing.Point(160, 30);
             this.txtDni.Margin = new System.Windows.Forms.Padding(4);
             this.txtDni.Name = "txtDni";
-            this.txtDni.Size = new System.Drawing.Size(176, 29);
+            this.txtDni.Size = new System.Drawing.Size(176, 25);
             this.txtDni.TabIndex = 67;
             // 
             // lblDni
@@ -429,7 +531,7 @@ namespace farmatown.Vistas
             this.lblDni.Location = new System.Drawing.Point(106, 32);
             this.lblDni.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDni.Name = "lblDni";
-            this.lblDni.Size = new System.Drawing.Size(46, 23);
+            this.lblDni.Size = new System.Drawing.Size(37, 19);
             this.lblDni.TabIndex = 66;
             this.lblDni.Text = "DNI:";
             // 
@@ -438,7 +540,7 @@ namespace farmatown.Vistas
             this.txtNombre.Location = new System.Drawing.Point(160, 83);
             this.txtNombre.Margin = new System.Windows.Forms.Padding(4);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(176, 29);
+            this.txtNombre.Size = new System.Drawing.Size(176, 25);
             this.txtNombre.TabIndex = 65;
             // 
             // label3
@@ -448,7 +550,7 @@ namespace farmatown.Vistas
             this.label3.Location = new System.Drawing.Point(70, 86);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(82, 23);
+            this.label3.Size = new System.Drawing.Size(63, 19);
             this.label3.TabIndex = 62;
             this.label3.Text = "Nombre:";
             // 
@@ -459,7 +561,7 @@ namespace farmatown.Vistas
             this.label4.Location = new System.Drawing.Point(365, 83);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(84, 23);
+            this.label4.Size = new System.Drawing.Size(61, 19);
             this.label4.TabIndex = 63;
             this.label4.Text = "Apellido:";
             // 
@@ -468,7 +570,7 @@ namespace farmatown.Vistas
             this.txtApellido.Location = new System.Drawing.Point(457, 80);
             this.txtApellido.Margin = new System.Windows.Forms.Padding(4);
             this.txtApellido.Name = "txtApellido";
-            this.txtApellido.Size = new System.Drawing.Size(176, 29);
+            this.txtApellido.Size = new System.Drawing.Size(176, 25);
             this.txtApellido.TabIndex = 64;
             // 
             // label2
@@ -480,7 +582,7 @@ namespace farmatown.Vistas
             this.label2.Location = new System.Drawing.Point(774, 95);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(46, 23);
+            this.label2.Size = new System.Drawing.Size(37, 19);
             this.label2.TabIndex = 39;
             this.label2.Text = "DNI:";
             // 
@@ -491,7 +593,7 @@ namespace farmatown.Vistas
             this.txtDniFiltro.Location = new System.Drawing.Point(818, 92);
             this.txtDniFiltro.Margin = new System.Windows.Forms.Padding(4);
             this.txtDniFiltro.Name = "txtDniFiltro";
-            this.txtDniFiltro.Size = new System.Drawing.Size(329, 29);
+            this.txtDniFiltro.Size = new System.Drawing.Size(329, 25);
             this.txtDniFiltro.TabIndex = 38;
             // 
             // btnFiltrar
@@ -536,6 +638,66 @@ namespace farmatown.Vistas
             this.dgvConsultar.TabIndex = 36;
             this.dgvConsultar.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvConsultar_CellContentClick);
             // 
+            // cNombre
+            // 
+            this.cNombre.FillWeight = 160F;
+            this.cNombre.HeaderText = "Nombre";
+            this.cNombre.MinimumWidth = 8;
+            this.cNombre.Name = "cNombre";
+            this.cNombre.ReadOnly = true;
+            this.cNombre.Width = 125;
+            // 
+            // cApellido
+            // 
+            this.cApellido.HeaderText = "Apellido";
+            this.cApellido.MinimumWidth = 8;
+            this.cApellido.Name = "cApellido";
+            this.cApellido.ReadOnly = true;
+            this.cApellido.Width = 125;
+            // 
+            // cDni
+            // 
+            this.cDni.HeaderText = "DNI";
+            this.cDni.MinimumWidth = 8;
+            this.cDni.Name = "cDni";
+            this.cDni.ReadOnly = true;
+            this.cDni.Width = 125;
+            // 
+            // ColTelefono
+            // 
+            this.ColTelefono.HeaderText = "Telefono";
+            this.ColTelefono.MinimumWidth = 6;
+            this.ColTelefono.Name = "ColTelefono";
+            this.ColTelefono.ReadOnly = true;
+            this.ColTelefono.Width = 125;
+            // 
+            // NroTarjeta
+            // 
+            this.NroTarjeta.HeaderText = "Column1";
+            this.NroTarjeta.MinimumWidth = 6;
+            this.NroTarjeta.Name = "NroTarjeta";
+            this.NroTarjeta.ReadOnly = true;
+            this.NroTarjeta.Visible = false;
+            this.NroTarjeta.Width = 125;
+            // 
+            // CodigoSeguridad
+            // 
+            this.CodigoSeguridad.HeaderText = "Column1";
+            this.CodigoSeguridad.MinimumWidth = 6;
+            this.CodigoSeguridad.Name = "CodigoSeguridad";
+            this.CodigoSeguridad.ReadOnly = true;
+            this.CodigoSeguridad.Visible = false;
+            this.CodigoSeguridad.Width = 125;
+            // 
+            // FechaVenc
+            // 
+            this.FechaVenc.HeaderText = "Column1";
+            this.FechaVenc.MinimumWidth = 6;
+            this.FechaVenc.Name = "FechaVenc";
+            this.FechaVenc.ReadOnly = true;
+            this.FechaVenc.Visible = false;
+            this.FechaVenc.Width = 125;
+            // 
             // btnEliminarFiltro
             // 
             this.btnEliminarFiltro.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -552,170 +714,9 @@ namespace farmatown.Vistas
             this.btnEliminarFiltro.UseVisualStyleBackColor = true;
             this.btnEliminarFiltro.Click += new System.EventHandler(this.btnEliminarFiltro_Click);
             // 
-            // FechaVenc
-            // 
-            this.FechaVenc.HeaderText = "Column1";
-            this.FechaVenc.MinimumWidth = 6;
-            this.FechaVenc.Name = "FechaVenc";
-            this.FechaVenc.ReadOnly = true;
-            this.FechaVenc.Visible = false;
-            this.FechaVenc.Width = 125;
-            // 
-            // CodigoSeguridad
-            // 
-            this.CodigoSeguridad.HeaderText = "Column1";
-            this.CodigoSeguridad.MinimumWidth = 6;
-            this.CodigoSeguridad.Name = "CodigoSeguridad";
-            this.CodigoSeguridad.ReadOnly = true;
-            this.CodigoSeguridad.Visible = false;
-            this.CodigoSeguridad.Width = 125;
-            // 
-            // NroTarjeta
-            // 
-            this.NroTarjeta.HeaderText = "Column1";
-            this.NroTarjeta.MinimumWidth = 6;
-            this.NroTarjeta.Name = "NroTarjeta";
-            this.NroTarjeta.ReadOnly = true;
-            this.NroTarjeta.Visible = false;
-            this.NroTarjeta.Width = 125;
-            // 
-            // ColTelefono
-            // 
-            this.ColTelefono.HeaderText = "Telefono";
-            this.ColTelefono.MinimumWidth = 6;
-            this.ColTelefono.Name = "ColTelefono";
-            this.ColTelefono.ReadOnly = true;
-            this.ColTelefono.Width = 125;
-            // 
-            // cDni
-            // 
-            this.cDni.HeaderText = "DNI";
-            this.cDni.MinimumWidth = 8;
-            this.cDni.Name = "cDni";
-            this.cDni.ReadOnly = true;
-            this.cDni.Width = 125;
-            // 
-            // cApellido
-            // 
-            this.cApellido.HeaderText = "Apellido";
-            this.cApellido.MinimumWidth = 8;
-            this.cApellido.Name = "cApellido";
-            this.cApellido.ReadOnly = true;
-            this.cApellido.Width = 125;
-            // 
-            // cNombre
-            // 
-            this.cNombre.FillWeight = 160F;
-            this.cNombre.HeaderText = "Nombre";
-            this.cNombre.MinimumWidth = 8;
-            this.cNombre.Name = "cNombre";
-            this.cNombre.ReadOnly = true;
-            this.cNombre.Width = 125;
-            // 
-            // ColBorrar
-            // 
-            this.ColBorrar.HeaderText = "";
-            this.ColBorrar.MinimumWidth = 6;
-            this.ColBorrar.Name = "ColBorrar";
-            this.ColBorrar.ReadOnly = true;
-            this.ColBorrar.Text = "Quitar";
-            this.ColBorrar.UseColumnTextForButtonValue = true;
-            this.ColBorrar.Width = 120;
-            // 
-            // ColTotal
-            // 
-            this.ColTotal.HeaderText = "Total";
-            this.ColTotal.MinimumWidth = 6;
-            this.ColTotal.Name = "ColTotal";
-            this.ColTotal.ReadOnly = true;
-            this.ColTotal.Width = 85;
-            // 
-            // colDescuento
-            // 
-            this.colDescuento.HeaderText = "Descuento";
-            this.colDescuento.MinimumWidth = 6;
-            this.colDescuento.Name = "colDescuento";
-            this.colDescuento.ReadOnly = true;
-            this.colDescuento.Width = 125;
-            // 
-            // ColCantidad
-            // 
-            this.ColCantidad.HeaderText = "Cantidad";
-            this.ColCantidad.MinimumWidth = 6;
-            this.ColCantidad.Name = "ColCantidad";
-            this.ColCantidad.ReadOnly = true;
-            this.ColCantidad.Width = 125;
-            // 
-            // ColPrecio
-            // 
-            this.ColPrecio.HeaderText = "Precio";
-            this.ColPrecio.MinimumWidth = 6;
-            this.ColPrecio.Name = "ColPrecio";
-            this.ColPrecio.ReadOnly = true;
-            this.ColPrecio.Width = 70;
-            // 
-            // nombreLab
-            // 
-            this.nombreLab.HeaderText = "Laboratorio";
-            this.nombreLab.MinimumWidth = 6;
-            this.nombreLab.Name = "nombreLab";
-            this.nombreLab.ReadOnly = true;
-            this.nombreLab.Width = 120;
-            // 
-            // idLaboratorio
-            // 
-            this.idLaboratorio.HeaderText = "idLab";
-            this.idLaboratorio.MinimumWidth = 6;
-            this.idLaboratorio.Name = "idLaboratorio";
-            this.idLaboratorio.ReadOnly = true;
-            this.idLaboratorio.Visible = false;
-            this.idLaboratorio.Width = 125;
-            // 
-            // nombreDroga
-            // 
-            this.nombreDroga.HeaderText = "Droga";
-            this.nombreDroga.MinimumWidth = 6;
-            this.nombreDroga.Name = "nombreDroga";
-            this.nombreDroga.ReadOnly = true;
-            this.nombreDroga.Width = 125;
-            // 
-            // idDroga
-            // 
-            this.idDroga.HeaderText = "idDroga";
-            this.idDroga.MinimumWidth = 6;
-            this.idDroga.Name = "idDroga";
-            this.idDroga.ReadOnly = true;
-            this.idDroga.Visible = false;
-            this.idDroga.Width = 125;
-            // 
-            // ColTipoArt
-            // 
-            this.ColTipoArt.HeaderText = "Tipo de articulo";
-            this.ColTipoArt.MinimumWidth = 6;
-            this.ColTipoArt.Name = "ColTipoArt";
-            this.ColTipoArt.ReadOnly = true;
-            this.ColTipoArt.Width = 200;
-            // 
-            // ColArticulo
-            // 
-            this.ColArticulo.HeaderText = "Articulo";
-            this.ColArticulo.MinimumWidth = 6;
-            this.ColArticulo.Name = "ColArticulo";
-            this.ColArticulo.ReadOnly = true;
-            this.ColArticulo.Width = 200;
-            // 
-            // Id
-            // 
-            this.Id.HeaderText = "ID";
-            this.Id.MinimumWidth = 6;
-            this.Id.Name = "Id";
-            this.Id.ReadOnly = true;
-            this.Id.Visible = false;
-            this.Id.Width = 90;
-            // 
             // FrmNuevaFactura
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::farmatown.Properties.Resources.fondoBlanco2;
             this.ClientSize = new System.Drawing.Size(1348, 952);
